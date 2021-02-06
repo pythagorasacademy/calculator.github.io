@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <form name="calculator">
+        <div class="calculator-grid">
+                <input class="input" type="text" name="result" placeholder="0" style="text-align: center;">
+            <button class="allclear" type="button" onclick="remv()">AC</button>
+            <button class="delete" type="button" onclick="DEL()">DEL</button>
+            <button type="button" value="Cos" onclick="cos()">cos</button>
+            <button type="button" value="Sin" onclick="sin()">sin</button>
+            <button type="button" value="Tg" onclick="tg()">tg</button>
+            <button type="button" value="Sqrt" onclick="sqrt()">√x</button>
+            <button type="button" value="Cbrt" onclick="cbrt()">∛x</button>
+            <button type="button" value="pow2" onclick="pow2()">x<sup>2</button>
+            <button type="button" value="pow3" onclick="pow3()">x<sup>3</sup></button>
+            <button type="button" value="pi" onclick="pi()">π</button>
+            <button type="button" value="log2" onclick="log2(value)">log<sub>2</sub>x</button>
+            <button type="button" value="log10" onclick="log10()">log<sub>10</sub>x</button>
+            <button type="button" value="%" onclick="Percentige()">%</button>
+            <button type="button" value="/" onclick="number(value)">÷</button>
+            <button type="button" value="1" onclick="number(value)">1</button>
+            <button type="button" value="2" onclick="number(value)">2</button>
+            <button type="button" value="3" onclick="number(value)">3</button>
+            <button type="button" value="*" onclick="number(value)">*</button>
+            <button type="button" value="4" onclick="number(value)">4</button>
+            <button type="button" value="5" onclick="number(value)">5</button>
+            <button type="button" value="6" onclick="number(value)">6</button>
+            <button type="button" value="+" onclick="number(value)">+</button>
+            <button type="button" value="7" onclick="number(value)">7</button>
+            <button type="button" value="8" onclick="number(value)">8</button>
+            <button type="button" value="9" onclick="number(value)">9</button>
+            <button type="button" value="-" onclick="number(value)">-</button>
+            <button type="button" value="." onclick="number(value)">.</button>
+            <button type="button" value="0" onclick="number(value)">0</button>
+            <button class="long" type="button" value="Equals" onclick="Equals()">=</button>
+        </div>
+    </form>
+</body>
+<script type="text/javascript">
+
+function cos(){
+  document.calculator.result.value = Math.cos(document.calculator.result.value)
+}
+function sin(){
+  document.calculator.result.value = Math.sin(document.calculator.result.value)
+}
+function tg(){
+  document.calculator.result.value = Math.tan(document.calculator.result.value)
+}
+
+function Percentige(value){
+  document.calculator.result.value = document.calculator.result.value / 100
+}
+function sqrt(){
+  document.calculator.result.value = Math.sqrt(document.calculator.result.value)
+}
+function cbrt(){
+  document.calculator.result.value = Math.cbrt(document.calculator.result.value)
+}
+function pow2(){
+  document.calculator.result.value = Math.pow(document.calculator.result.value, 2)
+}
+function pow3(){
+  document.calculator.result.value = Math.pow(document.calculator.result.value, 3)
+}
+function powx(value){
+  document.calculator.result.value = Math.pow(document.calculator.result.value)
+}
+function pi(){
+  document.calculator.result.value = Math.PI
+}
+function log2(){
+  document.calculator.result.value = Math.log2(document.calculator.result.value)
+}
+function log10(){
+  document.calculator.result.value = Math.log10(document.calculator.result.value)
+}
+function number(value){
+  document.calculator.result.value += value;
+}
+function remv(){
+  document.calculator.result.value = "";
+}
+function Equals(){
+  document.calculator.result.value = document.calculator.result.value + "=" + eval(document.calculator.result.value);
+}
+function DEL(value){
+    var a = document.calculator.result.value;
+    document.calculator.result.value = a.substr(0, a.length-1);
+}
+</script>
+</html>

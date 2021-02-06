@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectStyle.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://www.facebook.com/pitagora.ge">
+        <div class="logo">
+            <img src="https://scontent.ftbs6-1.fna.fbcdn.net/v/t1.0-9/12938347_842127985914788_749644446571070752_n.png?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=1lYw2BZ5FCsAX9N4bPp&_nc_ht=scontent.ftbs6-1.fna&oh=35b1d3128d1201230c110b1a214e82a5&oe=6024E54F"
+                alt="logo" class="logo">
+        </div>
+    </a>
+        <div class="header-buttons">
+            <ul>
+                <li><a href="#main">ფორმულების ბაზა</a></li>
+                <li><a href="#main-team">ჩვენ შესახებ</a></li>
+                <li><a href="#footer">კონტაქტი</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+        </div>
+
+
+        </ul>
+    </header>
+
+    <main class="main" id="main">
+        <div class="main-subjects--header">
+            <h2 class="main-subjects--header--text">ფორმულები</h2>
+        </div>
+        <div class="main-subjects">
+            <div class="dropdown">
+                <button class="dropbtn">მათემატიკა</button>
+                <div class="dropdown-content">
+                    <a href="geometria.html">გეომეტრია</a>
+                    <a href="aritmetika.html">არითმეტიკა</a>
+                    <a href="algebra.html">ალგებრა</a>
+
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">ფიზიკა</button>
+                <div class="dropdown-content">
+                    <a href="fizikaFormulebi.html">ფორმულები</a>
+                    <a href="fizika.html">ერთეულების გადაყვანა</a>
+                </div>
+            </div>
+            <button onclick="window.open('biologia.html')">ბიოლოგია</button>
+            <button onclick="window.open('qimia.html')">ქიმია</button>
+
+        </div>
+
+
+        <main-team>
+            <div class="main-team" id="main-team">
+                <div>
+                    <h2 class="main-team--header">ჩვენი გუნდის წევრები</h2>
+                </div>
+                <div class="main-team--container">
+                    <a href="https://www.facebook.com/mariam.gagua.10">
+                        <div class="main-team--person">
+                            <img class="mariami" src="https://www.sbdems.org/wp-content/uploads/2020/08/facebook-female-profile-icon-67.png"
+                                alt="person Icon">
+                            <p class="main-team--person--name">მარიამი</p>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/gio.diasamidze.12">
+                    <div class="main-team--person">
+                        <img src="https://i.pinimg.com/originals/0d/36/e7/0d36e7a476b06333d9fe9960572b66b9.jpg"
+                            alt="person Icon">
+                        <p class="main-team--person--name">გიორგი</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/alex.sarjveladze">
+                    <div class="main-team--person">
+                        <img src="https://i.pinimg.com/originals/0d/36/e7/0d36e7a476b06333d9fe9960572b66b9.jpg"
+                            alt="person Icon">
+                        <p class="main-team--person--name">ალექსანდრე </p>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+
+        </main-team>
+
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-LeftRightSections">
+                    <div class="footer-left">
+                        <div class="footer-left--about">
+                            <h3 class="footer-left--about--header">ჩვენ შესახებ</h3>
+                            <p class="footer-left--about--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsam temporibus esse sed nihil voluptas nostrum harum dolores veritatis at reiciendis nisi asperiores! Perspiciatis, assumenda? Excepturi fugiat dolor aperiam hic. </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-right">
+                        <h3 class="footer-right--contactHeader">
+                            მოგვწერეთ
+                        </h3>
+
+                        <form class="contact-container">
+                            <input class="contact-container--fName contact-input-styles" type="text" name="visitorName"
+                                id="visitorName" placeholder="თქვენი სახელი">
+                            <input class="contact-container--email contact-input-styles" type="email"
+                                name="visitorEmail" id="visitorEmail" placeholder="თქვენი მეილი">
+                            <input class="contact-container--text" type="text" name="emailText" id="emailText"
+                                placeholder="მოგვწერეთ">
+                            <button class="contact-container--btn">გაგზავნა</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="footer-copyright">
+        <p class="footer-copyright--content">
+            <span> Copyright @ პითაგორა | თბილისი,
+                <script>document.write(new Date().getFullYear())</script>
+            </span>
+        </p>
+    </div>
+
+</body>
+
+</html>

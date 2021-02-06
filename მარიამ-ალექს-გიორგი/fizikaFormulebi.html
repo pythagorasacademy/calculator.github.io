@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კინეტიკურის გამოთვლა</title>
+    <link rel="stylesheet" href="stylesheet21.css" />
+</head>
+<style>
+    body {
+   margin:0px;
+   padding:0px;
+   text-align:center;
+   background-color: rgb(204, 218, 255);;
+
+}
+
+
+input {
+    width:200px;
+    height:30px;
+    text-align:center;
+    font-size: 20px;
+    color:red;
+    background-color:white;
+    margin: 10px;
+}
+img {
+    width:300px;
+    height:200px;
+    
+}
+
+h2 {
+    background-color:rgb(0, 140, 255);
+    width: 400px;
+    border-radius: 5px;
+    color:gold;
+    margin-left: 560px;
+    font-size:30px;
+    text-align:center;
+    padding: 3px;
+}
+
+button {
+    background-color:gold;
+    color:blue;
+    border-radius: 5px;
+    font-size:25px;
+    text-align:center;
+    padding: 3px;
+}
+p {
+    background-color:rgb(0, 140, 255);
+    color:gold;
+    width: 400px;
+    border-radius: 5px;
+    font-size:25px;
+    text-align:center;
+    margin-left: 560px;
+    padding: 3px;
+
+}
+</style>
+<body>
+    <img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/140497341_3447730938687800_8844395970499869218_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=4J8IvNDiM6wAX_kXw0n&_nc_ht=scontent.ftbs5-1.fna&oh=c81c89ccde4b8df5ff28e3d9aca5965d&oe=6032E59A" alt="logo" class="logo" />
+    <h2>კინეტიკური ენერგია</h2>
+<div>
+    <input type="number" name="masa" id="masa" placeholder="მასა">
+    <br />
+    <input type="number" name="sichqare" id="sichqare" placeholder="სიჩქარე">
+    </div>
+    <button onclick="kinetikuriEnergia()">კინეტიკური ენერგიის გამოთვლა</button>
+    
+    <br>
+    <p id="kinetikuriShedegi">აქ გაჩნდება შედეგი</p>
+    <script>
+
+        function kinetikuriEnergia(){
+        var m = parseInt(document.getElementById('masa').value);
+        var v = parseInt(document.getElementById('sichqare').value);
+        if (m != null && v != null) {
+        var shedegi = m * v * v / 2;
+        document.getElementById('kinetikuriShedegi').innerHTML = 'კინეტიკური ენერგია არის ' + shedegi;
+        document.getElementById('kinetikuriShedegi')
+        }
+        }
+
+
+    </script>
+</body>
+</html>

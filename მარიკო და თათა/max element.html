@@ -1,0 +1,40 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>მაქსიმალური ელემენტის პოვნა</title>
+    <link rel="stylesheet" href="max element.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+<body>
+</br></br></br>
+
+    <header class="main-header">
+        <main class="maini"></br></br>
+    <h1>მაქსიმალური ელემენტის პოვნა რიცხვებში</h1></br></br>
+    <p>დააჭირეთ ღილაკს და შეიყვანეთ რიცხვების რაოდენობა, შემდეგ კი რიცხვები.</p></br></br>
+    <button onclick="maxElement()" class="BtnM">მაქსიმალური ელემენტის პოვნა</button></br></br></br>
+            <hr>
+        </br>
+        <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+        <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+   function maxElement(){
+    var ricxvebi = [];
+   var masiviSigrdze = parseInt(prompt("ჩაწერეთ ყუთებში მყოფი რიცხვების რაოდენობა"));
+   var maxel = 0;
+    for(var i = 0; i<masiviSigrdze; i++) {
+        var elementi = parseInt(prompt("შემოიტანეთ " + (masiviSigrdze-i)  + " ცალი რიცხვი"));
+        ricxvebi.push(elementi);
+       
+        if(ricxvebi[i]>maxel) {
+            maxel = ricxvebi[i];
+        }
+    }
+    alert("მაქსიმალური ელემენტია: " + maxel);
+}
+</script>
+</html>

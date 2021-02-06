@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>math page</title>
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="pythagora.png" alt="logo" class="logo">
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-links">
+                        <div class="navbar">
+                            <a href="#" onclick="window.open('pageninomaswi.html')">მთავარი</a>
+                            <a href="#algebra" >ალგებრა</a>
+                            <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()">გეომეტრია<i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#martkutxedi">მართკუთხედი</a>
+                                <a href="#kvadrati">კვადრატი</a>
+                                <a href="#samkutxedi">სამკუთხედი</a>
+                                <a href="#paralelogrami">პარალელოგრამი</a>
+                                <a href="#trapecia">ტრაპეცია</a>
+                            </div>
+                            </div> 
+                          </div>
+                    </nav>
+                </div>
+            </header>
+            <main class="main">
+            <div class="main-subjects--header" style="background-color: #f8e9a1">
+                <h1 class="main-subjects--header--h1" id="algebra">ალგებრა</h1>
+                <h2 class="main-subjects--header--text">გამოთვლა</h2>
+                <div class="form-box">
+                    <label>პირველი რიცხვი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ რიცხვი" id="ricxvi1" required>
+                    <br>
+                    <label>მეორე რიცხვი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ რიცხვი" id="ricxvi2" required>
+                    <br>
+                    <button class="marginBottom" onclick ="sxvaoba()">სხვაობის გამოთვლა</button>
+                    <br>
+                    <button class="marginBottom" onclick ="jami()">ჯამის გამოთვლა</button> 
+                    <br>
+                    <button class="marginBottom" onclick ="namravli()">ნამრავლის გამოთვლა</button>
+                    <br>
+                    <button class="marginBottom" onclick ="ganajofi()">განაყოფის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <label>რიცხვი</label><input  class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ რიცხვი" id="number" required>
+                    <br>
+                    <br>
+                    <button class="marginBottom" onclick ="kvadrati()" style="background-color: crimson;">კვადრატის გამოთვლა</button>
+                    <br>
+                    <button class="marginBottom" onclick ="kubi()" style="background-color: crimson;">კუბის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text">არითმეტიკული პროგრესია</h2>
+                    <label>სიგრძე</label><input class="inputClass marginBottom" type="number"  id="mimdevroba1"  placeholder="შეიყვანეთ სიგრძე">
+                    <br>
+                    <label>პირველი რიცხვი</label><input class="inputClass marginBottom" type="number" id="mimdevroba2"  placeholder="შეიყვანეთ პირველი რიცხვი">
+                    <br>
+                    <label>მეორე რიცხვი</label><input class="inputClass marginBottom" type="number" id="mimdevroba3"  placeholder="შეიყვანეთ მეორე რიცხვი">
+                    <br>
+                    <button class="marginBottom" onclick="arprogresia()" id="gilaki">გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;">შემოიტანეთ მასივი. ვიპოვოთ მასივის ყველა 5-ის ჯერადი რიცხვის ნამრავლი.</h3>
+                    <br>
+                    <button onclick="jeradebisNamravli1()">გამოთვლა</button>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;">შემოიტანეთ მასივი. ვიპოვოთ მასივის ყველა ლუწი რიცხვის ნამრავლი.</h3>
+                    <br>
+                    <button onclick="jeradebisNamravli2()">გამოთვლა</button>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;">შემოიტანეთ მასივი. ვიპოვოთ მასივის ყველა 15-ის ჯერადი რიცხვის ნამრავლი</h3>
+                    <br>
+                    <button onclick="jeradebisNamravli3()">გამოთვლა</button>
+                    <br>
+                    <br>
+
+    
+                    <h1 class="main-subjects--header--h1" id="geometria" style="font-size: 52px;">გეომეტრია</h1>
+                    <h2 class="main-subjects--header--text" id="martkutxedi">მართკუთხედი</h2>
+                    <label>სიგრძე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიგრძე" id="sigrze" required>
+                    <br>
+                    <label>სიგანე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიგანე" id="sigane" required>
+                    <br>
+                    <button  class="marginBottom" onclick ="martkutxedisFartobi()">მართკუთხედის ფართობის გამოთვლა </button>
+                    <br>
+                    <button  class="marginBottom" onclick ="martkutxedisPerimetri()">მართკუთხედის პერიმეტრის გამოთვლა</button>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="kvadrati">კვადრატი</h2>
+                    <label>გვერდის სიგრძე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიგრძე" id="sigrze1" required>
+                    <br>
+                    <button  class="marginBottom" onclick ="kvadratisFartobi()">კვადრატის ფართობის გამოთვლა </button>
+                    <br>
+                    <button  class="marginBottom" onclick ="kvadratisPerimetri()">კვადრატის პერიმეტრის გამოთვლა</button>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="samkutxedi">სამკუთხედი</h2>
+                    <label>პირველი გვერდი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სამკუთხედის პირველი გვერდი" id="gverdi1" required>
+                    <br>
+                    <label>მეორე გვერდი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სამკუთხედის მეორე გვერდი" id="gverdi2" required>
+                    <br>
+                    <label>მესამე გვერდი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სამკუთხედის მესამე გვერდი" id="gverdi3" required>
+                    <br>
+                    <button class="marginBottom" onclick ="samkutxedisPerimetri()">სამკუთხედის პერიმეტრის გამოთვლა</button>
+                    <br>
+                    <label>სამკუთხედის ფუძე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სამკუთხედის ფუძე" id="fudze" required>
+                    <br>
+                    <label>სიმაღლე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სამკუთხედის სიმაღლე" id="simagle" required>
+                    <br>
+                    <button class="marginBottom" onclick ="samkutxedisFartobi()">სამკუთხედის ფართობის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <label>პირველი კათეტი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ პირველი კათეტი" id="kateti1" required>
+                    <br>
+                    <label>მეორე კათეტი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მეორე კათეტი" id="kateti2" required>
+                    <br>
+                    <button class="marginBottom" onclick ="hipotenuzisGamotvla()">ჰიპოთენუზის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;">შეამოწმეთ სამკუთხედი შედგება თუ არა:</h3>
+                    <br>
+                    <button onclick="samkutxediPropmtit()">სამკუთხედის შემოწმება</button>
+                    <h2 class="main-subjects--header--text" id="paralelogrami">პარალელოგრამი</h2>
+                    <label>სიგრძე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ პარალელოგრამის სიგრძე" id="sigrze2" required>
+                    <br>
+                    <label>სიმაღლე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ პარალელოგრამის სიმაღლე" id="simagle2" required>
+                    <br>
+                    <button class="marginBottom" onclick ="paralelogramisPartobi()">პარალელოგრამის ფართობის გამოთვლა</button>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="trapecia">ტრაპეცია</h2>
+                    <label>სიგრძე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ ტრაპეციის სიგრძე" id="sigrze3" required>
+                    <br>
+                    <label>სიგანე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ ტრაპეციის სიმაღლე" id="sigane3" required>
+                    <br>
+                    <label>სიმაღლე</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ ტრაპეციის სიმაღლე" id="simagle3" required>
+                    <br>
+                    <button class="marginBottom" onclick ="trapeciisPartobi()">ტრაპეციის ფართობის გამოთვლა</button>
+                    <br>
+                    
+
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>Pythagoras<span>Academy</span></h3>
+                <p class="footer-links">
+                <a href="#">მთავარი</a>
+                <a href="#">ჩვენს შესახებ</a>
+                <a href="#">კონტაქტი</a>
+                </p>
+                <span style="color: #BB8FCE;">&copy Pythagoras | Tbilisi, <script>document.write(new Date().getFullYear())</script> ყველა უფლება დაცულია</span>
+                </div>
+                <div class="footer-center">
+                <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="color:#28B463;"><span>7 Sandro Euli Street</span> Tbilisi, Georgia</p>
+                </div>
+                <div>
+                <i class="fa fa-phone"></i>
+                <p style="color: blueviolet;">+995 555 87 87</p>
+                </div>
+                <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">pythagorasacademy.ge@gmail.com</a></p>
+                </div>
+                </div>
+                <div class="footer-right">
+                <p class="footer-company-about">
+                <span>აკადემიის შესახებ</span>
+                ცენტრში სწავლება ეფუძნება სწავლების მრავაფეროვან,მრავალმხრივ და არასტანდარტულ მეთოდებს მოსწავლეების ასაკის შესაბამისად.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/pitagora.ge"><i class="fafa-facebook"><img src="facebook logo.png" style="height: 20px 20px;
+                    width: 28px;" /></i></a>
+                <a href="#"><i class="fafa-twitter"><img src="Twitter logo.png" style="height: 20px 20px;
+                    width: 36px; " /></i></a>
+                <a href="#"><i class="fafa-instagram"><img src="instagram logo.png" style="height: 20px 20px;
+                    width: 35px;" /></i></a>
+                </div>
+          </div>
+    </body>
+<script>
+    function sxvaoba () {
+  var ricxvi1= parseInt(document.getElementById("ricxvi1").value);
+  var ricxvi2= parseInt(document.getElementById("ricxvi2").value);
+  var shedegi=ricxvi1-ricxvi2;
+  alert("ამ ორი რიცხვის სხვაობა არის: "+shedegi);
+}
+
+function jami () {
+var ricxvi1= parseInt(document.getElementById("ricxvi1").value);
+var ricxvi2= parseInt(document.getElementById("ricxvi2").value);
+var shedegi=ricxvi1+ricxvi2;
+alert("ამ ორი რიცხვის ჯამი არის: "+shedegi);
+}
+
+function namravli () {
+var ricxvi1= parseInt(document.getElementById("ricxvi1").value);
+var ricxvi2= parseInt(document.getElementById("ricxvi2").value);
+var shedegi=ricxvi1*ricxvi2;
+alert("ამ ორი რიცხვის ნამრავლი არის: "+shedegi);
+}
+
+function ganajofi () {
+var ricxvi1= parseInt(document.getElementById("ricxvi1").value);
+var ricxvi2= parseInt(document.getElementById("ricxvi2").value);
+var shedegi=ricxvi1/ricxvi2;
+alert("ამ ორი რიცხვის განყოფი არის: "+shedegi);
+}
+
+function kvadrati() {
+var number= parseInt(document.getElementById("number").value);
+var shedegi = number*number;
+alert("ამ რიცხვის კვადრატი არის: "+shedegi);
+}
+function kubi() {
+var number= parseInt(document.getElementById("number").value);
+var shedegi = number*number*number;
+alert("ამ რიცხვის კუბი არის: "+shedegi);
+  
+}
+
+function martkutxedisFartobi() {
+var sigrze= parseInt(document.getElementById("sigrze").value);
+var sigane= parseInt(document.getElementById("sigane").value);
+var shedegi = sigrze*sigane;
+alert("მართკუთედის ფართობი არის: "+shedegi);
+}
+function martkutxedisPerimetri() {
+var sigrze= parseInt(document.getElementById("sigrze").value);
+var sigane= parseInt(document.getElementById("sigane").value);
+var shedegi = (sigrze+sigane)*2;
+alert("მართკუთხედის პერიმეტრი არის: "+ shedegi);
+}
+
+function kvadratisFartobi() {
+var sigrze1= parseInt(document.getElementById("sigrze1").value);
+var shedegi = sigrze1*sigrze1;
+alert("კვადრატის ფართობი არის: "+shedegi);
+}
+function kvadratisPerimetri() {
+var sigrze1= parseInt(document.getElementById("sigrze1").value);
+var shedegi = sigrze1*4
+alert("კვადრატის პერიმეტრი არის: "+ shedegi);
+}
+
+function samkutxedisPerimetri() {
+var gverdi1= parseInt(document.getElementById("gverdi1").value);
+var gverdi2= parseInt(document.getElementById("gverdi2").value);
+var gverdi3= parseInt(document.getElementById("gverdi3").value);
+var shedegi = gverdi1+gverdi2+gverdi3;
+alert("სამკუთხედის პერიმეტრი არის: "+ shedegi);
+}
+
+function samkutxedisFartobi() {
+var fudze= parseInt(document.getElementById("fudze").value);
+var simagle= parseInt(document.getElementById("simagle").value);
+var shedegi = (fudze*simagle)/2;
+alert("სამკუთხედის ფართობი არის: "+ shedegi);
+}
+
+function hipotenuzisGamotvla() {
+var kateti1= parseInt(document.getElementById("kateti1").value);
+var kateti2= parseInt(document.getElementById("kateti2").value);
+var hipotenuzisKvadrati = kateti1*kateti1+kateti2*kateti2 ;
+alert("ამ სამკუთხედის ჰიპოტენუზა არის: " + (Math.sqrt(hipotenuzisKvadrati)));
+}
+
+function paralelogramisPartobi() {
+var sigrze2= parseInt(document.getElementById("sigrze2").value);
+var simagle2= parseInt(document.getElementById("simagle2").value);
+var shedegi = sigrze2*simagle2;
+alert("პარარელოგრამის ფართობი არის: "+ shedegi);
+}
+
+function trapeciisPartobi() {
+var sigrze3= parseInt(document.getElementById("sigrze3").value);
+var simagle3= parseInt(document.getElementById("simagle3").value);
+var sigane3= parseInt(document.getElementById("sigane3").value);
+var shedegi = 0.5*(sigrze3+sigane3)*simagle3;
+alert("ტრაპეციის ფართობი არის: "+ shedegi);
+}
+
+function samkutxediPropmtit(){
+var a = parseInt(prompt('შემოიტანეთ სამკუთხედის პირველი გვერდის სიდიდე'));
+var b = parseInt(prompt('შემოიტანეთ სამკუთხედის მეორე გვერდის სიდიდე'));
+var c = parseInt(prompt('შემოიტანეთ სამკუთხედის მესამე გვერდის სიდიდე'));
+
+if (a + b > c && (a + c > b) && (b + c >a)) {
+  var shedgeba = "ამ 3 გვერდით სამკუთხედი შედგება";
+  alert(shedgeba);
+}else{
+  var verShedgeba = "ამ 3 გვერდით სამკუთხედი ვერ შედგება"
+  alert(verShedgeba);
+}
+}
+
+function arprogresia(){
+   var a = parseInt(document.getElementById('mimdevroba1').value);
+        var b = parseInt(document.getElementById('mimdevroba2').value);
+        var c = parseInt(document.getElementById('mimdevroba3').value);
+        var array = [];
+        array.push(b);
+        array.push(c);
+        for(var i = 2; i< a; i++)
+        {
+          array.push(b+i*(c-b));
+        }
+        alert("კანონზომიერება არის ასეთი: " + array);
+}
+
+function jeradebisNamravli1(){
+    var arrLength = prompt('შეიყვანეთ მასივში ელემენტების რაოდენობა');
+    var array = [];
+    var namravli = 1;
+    for ( var i = 0; i < arrLength; i++) {
+        var el = prompt('შემოიტანეთ ელემენტები');
+        array.push(parseInt(el));
+        if ( el % 5 == 0) {
+            namravli = namravli * el;
+        }
+    }
+    alert('5-ის ჯერადი რიცხვების ნამრავლი იქნება: ' + namravli)
+}
+
+function jeradebisNamravli2(){
+    var arrLength = prompt('შეიყვანეთ მასივში ელემენტების რაოდენობა');
+    var array = [];
+    var namravli = 1;
+    for ( var i = 0; i < arrLength; i++) {
+        var el = prompt('შემოიტანეთ ელემენტები');
+        array.push(parseInt(el));
+        if ( el % 2 == 0) {
+            namravli = namravli * el;
+        }
+    }
+    alert('ლუწის ჯერადი რიცხვების ნამრავლი იქნება: ' + namravli)
+    
+}
+
+function jeradebisNamravli3(){
+    var arrLength = prompt('შეიყვანეთ მასივში ელემენტების რაოდენობა');
+    var array = [];
+    var namravli = 1;
+    for ( var i = 0; i < arrLength; i++) {
+        var el = prompt('შემოიტანეთ ელემენტები');
+        array.push(parseInt(el));
+        if ( el % 3 == 0 && el % 5== 0) {
+            namravli = namravli * el;
+        }
+    }
+    alert('15-ის ჯერადი რიცხვების ნამრავლი იქნება: ' + namravli)
+    
+}
+
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+</script>
+</html>

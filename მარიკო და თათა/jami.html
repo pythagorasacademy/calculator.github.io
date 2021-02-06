@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>ჯამი</title>
+      <link rel="stylesheet" href="jami.css">
+      <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+
+</head>
+<body>
+    <header class="main-header">
+        <main class="maini">
+        </br>
+    <h1>ჯამის გამოთვლა</h1></br></br>
+    <p>დააჭირეთ ღილაკს, ჩაწერეთ რამდენი ელემენტი გსურთ რომ იყოს მასივში. შემდეგ შემოიტანეთ სხვადასხვა რიცხვები.</p>
+    </br>
+</br>
+    <button onclick="mimateba()" class="BtnJ">მიმატება</button>
+    </br>
+</br>
+</br>
+    <p>რა ნიშნავს მიმატება? ამას იხილავთ მითითებულ საიტზე</p></br></br>
+    <button onclick="window.location.href='https://ka.khanacademy.org/math/arithmetic-home/addition-subtraction'" class="BtnS"> გავიგოთ რა არის მიმატება</button></br></br>
+    <p>(ინფორმაციის წვდომას ვაკეთებთ ხანის აკადემიის საიტზე)</p></br></br>
+</br></br> 
+<hr>
+</br> 
+<button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+<button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+</main>
+</header>
+</body>
+    <script>
+      function mimateba() {
+    var masivi = [];
+    var sum = 0;
+    var masivisSigrdze = parseInt(prompt('ჩაწერეთ მასივში ელემენტების რაოდენობა'));
+
+    for ( var i = 0; i < masivisSigrdze; i++) {
+        var elementi = parseInt(prompt('ჩაწერეთ მასივის ' + masivisSigrdze + ' ცალი ელემენტი'));
+        masivi.push(elementi);
+       
+            sum = sum + elementi;
+        
+    }
+    alert('მასივის ყველა 3ის ჯერადი წევრის ჯამია: ' + sum);
+}
+    </script>
+</html>

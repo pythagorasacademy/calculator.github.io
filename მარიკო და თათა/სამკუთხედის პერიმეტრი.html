@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სამკუთხედის პერიმეტრი</title>
+    <link rel="stylesheet" href="სამკუთხედის პერიმეტრი.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+</br></br></br>
+<body>
+    <header class="main-header">
+        <main class="maini"></br>
+            <h1>გამოვითვალოთ სამკუთხედის პერიმეტრი</h1></br></br>
+            <label>რიცხვი 1</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="gverdi1"></br></br>
+            <label>რიცხვი 2</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="gverdi2"></br></br>
+            <label>რიცხვი 3</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="gverdi3"></br></br>
+            <button onclick="samkutxedi()" class="BtnX">სამკუთხედის პერიმეტრი</button></br></br></br></br>
+      
+    <hr>
+    </br>
+            <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+            <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+        </main>
+    </header>
+</body>
+<script>
+    function samkutxedi() {
+       
+    var gverdi1 = parseInt(document.getElementById('gverdi1').value);
+    var gverdi2 = parseInt(document.getElementById('gverdi2').value);
+    var gverdi3 = parseInt(document.getElementById('gverdi3').value);
+    if(gverdi1 + gverdi2 <= gverdi3 || gverdi2 + gverdi3 <= gverdi1 || gverdi3 + gverdi1 <= gverdi2){
+        alert("სამკუთხედი არ შედგება და პერიმეტრი ვერ გამოითვლება.")
+    }else{
+        var perimetri = gverdi1 + gverdi2 + gverdi3;
+        
+        alert("სამკუთხედის პერიმეტრი იქნება: " + perimetri);
+    }
+}
+
+
+</script>
+</html>

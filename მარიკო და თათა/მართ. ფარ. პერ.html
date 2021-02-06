@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>მართკუთხედის პერიმეტრი და ფართობი</title>
+    <link rel="stylesheet" href="მართ. ფარ. პერ.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+    
+</head>
+<body>
+    <header class="main-header">
+        <main class="maini">
+    <h1>მართკუთხედის პერიმეტრის გამოთვლა</h1>
+</br></br>
+    <label>ჩაწერეთ პირველი რიცხვი</label><input type="number" placeholder="გვერდი 1" id="ricxvi1"/></br></br>
+    <label>ჩაწერეთ მეორე რიცხვი</label><input type="number" placeholder="გვერდი 2" id="ricxvi2"/></br></br>
+    <button onclick="perimetri()" class="BtnP">პერიმეტრის გამოთვლა</button></body></br></br>
+
+    <h1>მართკუთხედის ფართობის გამოთვლა</h1>
+    <label>ჩაწერეთ პირველი რიცხვი</label><input type="number" placeholder="რიცხვი 1" id="ricxvi01"/></br></br>
+    <label>ჩაწერეთ მეორე რიცხვი</label><input type="number" placeholder="რიცხვი 2" id="ricxvi02"/></br></br>
+    <button onclick="fartobi()" class="BtnF"> ფართობის გამოთვლა</button>
+</br></br>
+    <hr>
+</br>
+<button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+<button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+      function perimetri() {
+        var ricxvi1 = parseInt(document.getElementById('ricxvi1').value);
+        var ricxvi2 = parseInt(document.getElementById("ricxvi2").value);
+        if(ricxvi1 <= 0 || ricxvi2 <= 0){
+            alert('შეცვალეთ თქვენ მიერ შემოყვანილი რიცხვი');
+            return;
+        }
+        var sum = (ricxvi1 + ricxvi1) + (ricxvi2 + ricxvi2);
+        alert('მართკუთხედის პერიმეტრია ' + sum);
+    }
+
+    function fartobi() {
+        var ricxvi01 = parseInt(document.getElementById('ricxvi01').value);
+        var ricxvi02 = parseInt(document.getElementById('ricxvi02').value);
+        if(ricxvi01 <= 0 || ricxvi02 <= 0){
+            alert('შეცვალეთ რიცხვი');
+            return;
+        }
+        var sum = ricxvi01 * ricxvi02;
+        alert('მართკუთხედის ფართობია ' + sum);
+    }
+</script>
+</html>

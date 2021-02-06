@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lenght Converter</title>
+    <link rel="stylesheet" href="stylesheet13.css">
+
+</head>
+<style>
+    .logo {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 150px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(204, 218, 255);
+    }
+
+    .converter-body {
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .converter-title {
+        text-align: center;
+        margin: 13px 0px;
+        font-size: 50px;
+        color: burlywood;
+    }
+
+    input {
+        height: 30px;
+        text-align: center;
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: 800px;
+        width: 180px;
+        color: blue;
+
+
+    }
+
+    #input {
+        margin-left: 25px;
+    }
+
+    #inputType,
+    #resultType {
+        width: 175px;
+        margin-left: 35px;
+        color: red;
+        border: 3px solid gold;
+        height: 30px;
+
+
+    }
+
+    #resultType {
+        margin-left: 12.5px;
+    }
+</style>
+
+<body>
+    <div class="converter-body">
+        <img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/140497341_3447730938687800_8844395970499869218_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=4J8IvNDiM6wAX_kXw0n&_nc_ht=scontent.ftbs5-1.fna&oh=c81c89ccde4b8df5ff28e3d9aca5965d&oe=6032E59A"
+            alt="logo" class="logo" />
+
+        <h1 class="converter-title">სიგრძის ერთეულთა გადაყვანა</h1>
+        <div>
+            <input type="text" placeholder="I N P U T" id="input">
+            <span>==</span>
+            <input type="text" placeholder="R E S U L T" id="result">
+        </div>
+        <br />
+        <div>
+            <select id="inputType">
+                <option value="meter">M e t e r</option>
+                <option value="kilometer">K i l o m e t e r</option>
+                <option value="Centimeter">C e n t i m e t e r</option>
+            </select>
+
+            <select id="resultType">
+                <option value="meter">M e t e r</option>
+                <option value="kilometer">k i l o m e t e r</option>
+                <option value="Centimeter">C e n t i m e t e r</option>
+            </select>
+        </div>
+
+    </div>
+    <script>
+        var input = document.getElementById('input');
+        var result = document.getElementById('result');
+        var inputType = document.getElementById('inputType');
+        var resultType = document.getElementById('resultType');
+        var inputTypeValue, resultTypeValue;
+
+
+        input.addEventListener("keyup", myResult);
+        inputType.addEventListener("change", myResult);
+        resultType.addEventListener("change", myResult);
+
+        inputTypeValue = inputType.value;
+        resultTypeValue = resultType.value;
+
+        function myResult() {
+
+            inputTypeValue = inputType.value;
+            resultTypeValue = resultType.value;
+
+            if (inputTypeValue === "meter" && resultTypeValue === "kilometer") {
+
+                // meter to kilometer
+                result.value = Number(input.value) * 0.001;
+            } else if (inputTypeValue === "meter" && resultTypeValue === "Centimeter") {
+
+                // meter to Centimeter
+                result.value = Number(input.value) * 100;
+
+            } else if (inputTypeValue === "meter" && resultTypeValue === "meter") {
+                // meter to meter
+                result.value = input.value
+            }
+
+
+            if (inputTypeValue === "kilometer" && resultTypeValue === "meter") {
+                // kilometer to meter
+                result.value = Number(input.value) * 1000;
+            } else if (inputTypeValue === "kilometer" && resultTypeValue === "Centimeter") {
+                // kilometer to Centimeter formula
+                result.value = Number(input.value) * 100000;
+            } else if (inputTypeValue === "kilometre" && resultTypeValue === "kilometer") {
+                // kilometer to kilometer formula
+                result.value = input.value
+            }
+
+            if (inputTypeValue === "Centimeter" && resultTypeValue === "kilometer") {
+                // Centimeter to kilometer formula
+                result.value = Number(input.value) * 0.00001;
+            } else if (inputTypeValue === "Centimeter" && resultTypeValue === "meter") {
+                // Centimeter to meter formula
+                result.value = Number(input.value) * 0.01;
+            } else if (inputTypeValue === "Centimeter" && resultTypeValue === "Centimeter") {
+                // Centimeter to Centimeter formula
+                result.value = input.value
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

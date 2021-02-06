@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>კუბში აყვანა</title>
+    <link rel="stylesheet" href="kubshi ayvana.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+<body>
+    <header class="main-header">
+        <main class="maini">
+        </br>
+    </br>
+    <h1>რიცხვების კუბში აყვანა</h1>
+        </br>
+    </br>
+    <p>ჩაწერეთ მოცემულ უჯრაში სასურველი რიცხვი, შემდეგ კი დააჭირეთ ღილაკს.</p>
+</br>
+    <label>ჩაწერეთ რიცხვი</label><input type="number" placeholder="შემოიტანეთ რიცხვი" id="ricxvi1"/>
+</br>
+</br>
+    <button onclick="kubshiAyvana()" class="BtnU">კუბის გამოთვლა</button>
+    </br>
+    </br>
+</br>
+</br>
+    <p>რას ნიშნავს რიცხვის კუბში აყვანა?</br></br>რიცხვის კუბში აყვანა ნიშნავს რაიმე რიცხვის თავის თავზე 3-ჯერ გამრავლებას. მაგ: </br></br>  3 აყვანილი კუბში იქნება 3 * 3 * 3 =  27</p>
+</br>
+</br>
+<hr>
+</br>
+<button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+<button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+  </main>
+</header>
+</body>
+<script>
+    function kubshiAyvana() {
+      var ricxvi = parseInt(document.getElementById("ricxvi1").value);
+      var sum = ricxvi * ricxvi * ricxvi;
+      alert("ამ რიცხვის კუბია " + sum);
+    }
+</script>
+</html>

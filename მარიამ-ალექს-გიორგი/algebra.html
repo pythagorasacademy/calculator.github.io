@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ალგებრა</title>
+</head>
+<style>
+    body {
+        background-color: rgb(204, 218, 255);
+
+    }
+
+    body {
+        background-color: rgb(158, 175, 223);
+        width: auto;
+    }
+
+    .algebra {
+        background-color: rgb(50, 63, 104);
+        color: white;
+        padding: 5px;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 10px;
+        font-size: 40px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-right: 40px;
+    }
+
+    .alg {
+        background-color: rgb(64, 65, 121);
+        width: 300px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4 {
+        color: black;
+        font-size: 20px;
+    }
+
+    button {
+        background-color: rgb(27, 6, 65);
+        color: white;
+        width: 200px;
+        height: 40px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 class="algebra"> ალგებრა</h1>
+    <div class="main">
+
+        <div class="alg">
+            <h4>კვადრატული ფესვის ამოყვანა</h4>
+            <br>
+            <button onclick="kvadratFesvi()">გამოთვლის დაწყება</button>
+        </div>
+
+
+        <div class="alg">
+            <h4>კუბური ფესვის ამოყვანა</h4>
+            <br>
+            <button onclick="cubeFesvi()">გამოთვლის დაწყება</button>
+        </div>
+
+
+        <div class="alg">
+            <h4> რიცხვის ხარისხში აყვანა</h4>
+            <br>
+            <button onclick="square()">გამოთვლის დაწყება</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    function kvadratFesvi() {
+        var number = prompt('შეიტანეთ რიცხვი: ');
+        var result = Math.sqrt(number);
+        alert(`${number}- ის კვადრატული ფესვია ${result}`)
+    }
+
+    function cubeFesvi() {
+        var number = prompt('შეიტანეთ რიცხვი: ');
+        var result = Math.cbrt(number);
+        alert(`${number}- ის კუბური ფესვია ${result}`)
+    }
+
+    function square() {
+        var x = prompt("შემოიტანეთ რიცხვი:");
+        var y = prompt("შემოიტანეთ რა რიცხვის ხარისხში გსურთ მისი აყვანა:");
+        var x_squared = Math.pow(x, y)
+        alert(`${x} მე- ${y} ხარისხში უდრის ${x_squared} `)
+    }
+
+
+
+</script>
+
+</html>

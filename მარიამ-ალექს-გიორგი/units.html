@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>unit converter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="units.css">
+</head>
+<style>
+    body {
+    background-color: rgb(228, 209, 175);
+    margin-left: 350px;
+    margin-top: 200px;
+}
+
+.title{
+    background-color: crimson;
+    width: 1000px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.left-side {
+    float: left;
+    margin-right: 150px;
+}
+
+#right-side {
+    float: right;
+}
+
+
+input{
+    width: 400px;
+    height: 50px;
+    padding: 4px;
+    border: 4px rgb(197, 73, 51) ;
+    border-color: crimson;
+    border-radius: 5px;
+    background-color: rgb(252, 248, 244);
+    font-size: medium;
+    font-size: 30px;
+    
+}
+
+select{
+    width: 300px;
+    font-size: 20px;
+    height: 40px;
+    padding: 3px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color:rgb(252, 248, 244) ;
+    border-color: rgb(73, 10, 23);
+}
+
+option{
+    background-color: rgb(221, 177, 160);
+}
+
+
+
+
+</style>
+
+<body>
+    <div class="title">
+        <h1>ტემპერატურის ერთეულთა გადაყვანა</h1>
+    </div>
+    <div class="left-side">
+        <p></p>
+        <br>
+        <input type="number" name="from" id="input" placeholder="From">
+        <br>
+        <select id="inputType">
+            <option value="celsius">ცელსიუსი</option>
+            <option value="kelvin">კელვინი</option>
+            <option value="fahrenheit">ფარენჰაიტი</option>
+        </select>
+    </div>
+
+    <div class="right-side">
+        <p></p>
+        <br>
+        <input type="number" name="to" id="result" placeholder="To">
+        <br>
+        <select id="resultType">
+            <option value="celsius">ცელსიუსი</option>
+            <option value="kelvin">კელვინი</option>
+            <option value="fahrenheit">ფარენჰაიტი</option>
+        </select>
+    </div>
+
+    <script>
+        var input = document.getElementById('input');
+        var result = document.getElementById('result');
+        var inputType = document.getElementById('inputType');
+        var resultType = document.getElementById('resultType');
+        var inputTypeValue, resultTypeValue;
+
+
+        input.addEventListener("keyup", myResult);
+        inputType.addEventListener("change", myResult);
+        resultType.addEventListener("change", myResult);
+
+        function myResult() {
+
+            inputTypeValue = inputType.value;
+            resultTypeValue = resultType.value;
+            if (inputTypeValue === "celsius" && resultTypeValue === "fahrenheit") {
+                // celsius to fahrenheit
+                result.value = Number(input.value) * 1.8 + 32;
+            } else if (inputTypeValue === "celsius" && resultTypeValue === "kelvin") {
+
+                // celsius to kelvin
+                result.value = Number(input.value) + 273.15;
+
+            } else if (inputTypeValue === "celsius" && resultTypeValue === "celsius") {
+                // celsius to celsius
+                result.value = input.value
+            }
+
+            if (inputTypeValue === "fahrenheit" && resultTypeValue === "celsius") {
+                // fahrenheit to celsius
+                result.value = Number(input.value-32) * 5/9;
+            } else if (inputTypeValue === "fahrenheit" && resultTypeValue === "kelvin") {
+
+                // fahrenheit to kelvin
+                result.value = Number(input.value + 459.67) * 5/9;
+
+            } else if (inputTypeValue === "fahrenheit" && resultTypeValue === "fahrenheit") {
+                // fahrenheit to fahrenheit
+                result.value = input.value
+            }
+
+
+            if (inputTypeValue === "kelvin" && resultTypeValue === "fahrenheit") {
+                // kelvin to fahrenheit
+                result.value = Number(input.value) * 9/5 - 459.67;
+            } else if (inputTypeValue === "kelvin" && resultTypeValue === "celsius") {
+
+                // kelvin to celsius
+                result.value = Number(input.value) - 273.15 ;
+
+            } else if (inputTypeValue === "kelvin" && resultTypeValue === "kelvin") {
+                // kelvin to kelvin
+                result.value = input.value
+            }
+        }
+
+       
+
+    </script>
+
+</body>
+
+</html>

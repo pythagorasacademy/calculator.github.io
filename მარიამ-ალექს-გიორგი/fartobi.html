@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ფიგურების ფართობის გამომთვლელი</title>
+    <link rel="stylesheet" href="stylesheet2.css" />
+    </head>
+    <style>
+        body {
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+}
+
+
+select {
+    width: 250px;
+    height: 25px;
+    color:red;
+    background-color:whitesmoke;
+    font-size:20px;
+}
+h1 {
+    color:black;
+    margin:auto;
+    font-size:50px;
+
+}
+label {
+    color:red;
+    font-size:20px;
+    
+   
+}
+body {
+    width: 662px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(204, 218, 255);
+}
+
+input {
+    height:30px;
+    width: 250px;
+    background-color:whitesmoke;
+    color:red;
+    font-size:17px;
+    margin: 7px;
+   
+}
+
+.radius{
+    margin-right: 80px;
+}
+
+
+p {
+    color:red;
+    background-color:gold;
+    font-size:25px;
+}
+h2 {
+    background-color:rgb(202, 143, 88);
+    max-width: 200px;
+    margin-left: 220px;
+    border-radius: 5px;
+
+}
+    </style>
+    
+
+<body>
+    
+    <h1>ფიგურების ფართობის გამომთვლელი</h1>
+    <form action="javascript:calculateArea()" onchange="javascript:updateForm()">
+        
+        <label for="id_shapes">აირჩიე ფიგურა</label>
+        
+    <div>
+        <select id="id_shapes">
+
+            <option value="circle" selected>წრე</option>
+            <option value="triangle">სამკუთხედი</option>
+            <option value="square">კვადრატი</option>
+            <option value="rectangle">მართკუთხედი</option>
+        </select>
+        </div>
+        <br><br>
+<div class="radius">
+        <div id="id_inputs_circle">
+            <label for="id_radius">რადიუსი</label>
+            <input id="id_radius" type="number" min="0" step="any">
+            <h2><em>A = &Pi;r<sup>2</sup></em></h2>
+        </div>
+    </div>
+
+        <div id="id_inputs_triangle" hidden>
+            <label for="id_base">ფუძე</label>
+            <input id="id_base" type="number" min="0" step="any">
+            <br>
+            <label for="id_height">სიმაღლე</label>
+            <input id="id_height" type="number" min="0" step="any">
+            <h2><em>A = <sup>bh</sup>&frasl;<sub>2</sub></em></h2>
+        </div>
+
+        <div id="id_inputs_square" hidden>
+            <label for="id_side">გვერდი</label>
+            <input id="id_side" type="number" min="0" step="any">
+            <h2><em>A = s<sup>2</sup></em></h2>
+        </div>
+
+        <div id="id_inputs_rectangle" hidden>
+            <label for="id_length">სიმაღლე</label>
+            <input id="id_length" type="number" min="0" step="any">
+            <br>
+            <label for="id_width">სიგანე</label>
+            <input id="id_width" type="number" min="0" step="any">
+            <h2><em>A = lw</em></h2>
+        </div>
+    
+        <input type="submit" value="გამოითვალე ფართობი">
+        <p id="id_output"></p>
+    </form>
+
+    <script>
+        function updateForm() {
+
+        
+        document.getElementById("id_inputs_circle").hidden = true;
+        document.getElementById("id_inputs_triangle").hidden = true;
+        document.getElementById("id_inputs_square").hidden = true;
+        document.getElementById("id_inputs_rectangle").hidden = true;
+
+        
+        let shape = document.getElementById("id_shapes").value;
+        switch (shape) {
+        case "circle":
+        document.getElementById("id_inputs_circle").hidden = false;
+        break;
+        case "triangle":
+        document.getElementById("id_inputs_triangle").hidden = false;
+        break;
+        case "square":
+        document.getElementById("id_inputs_square").hidden = false;
+        break;
+        case "rectangle":
+        document.getElementById("id_inputs_rectangle").hidden = false;
+        break;
+        }
+        }
+
+        function calculateArea() {
+
+        let shape = document.getElementById("id_shapes").value;
+
+        let ფართობი = 0;
+        switch (shape) {
+        case "circle":
+        let radius = document.getElementById("id_radius").value;
+        ფართობი = Math.PI * radius * radius;
+        break;
+        case "triangle":
+        let base = document.getElementById("id_base").value;
+        let height = document.getElementById("id_height").value;
+        ფართობი = base * height / 2;
+        break;
+        case "square":
+        let side = document.getElementById("id_side").value;
+        ფართობი = side * side;
+        break;
+        case "rectangle":
+        let length = document.getElementById("id_length").value;
+        let width = document.getElementById("id_width").value;
+        ფართობი = length * width;
+        break;
+        }
+
+        document.getElementById("id_output").innerHTML = "ფართობი = " + ფართობი;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="stylesheet13.css">
+
+</head>
+<style>
+       .logo{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(204, 218, 255);
+}
+
+.converter-body {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.converter-title {
+    text-align: center;
+    margin: 13px 0px;
+    font-size: 50px;
+    color:burlywood;
+}
+
+input {
+    height: 30px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 800px;
+    width: 180px;
+    color: blue;
+    margin-top: 40px;
+    margin-left: 10px;
+
+
+}
+
+.inputs {
+    width: 500xp;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    
+}
+
+#input {
+    margin-left: -200px;
+}
+
+#inputType, #resultType {
+    width: 155px;
+    margin-left: 35px;
+    color: red;
+    border: 3px solid gold;
+    height:30px;
+   
+   
+}
+
+#resultType {
+    margin-left: 12.5px;
+}
+
+
+
+
+</style>
+<body>
+
+    <div class="converter-body">
+        <img src="https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-9/140497341_3447730938687800_8844395970499869218_o.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=4J8IvNDiM6wAX_kXw0n&_nc_ht=scontent.ftbs5-1.fna&oh=c81c89ccde4b8df5ff28e3d9aca5965d&oe=6032E59A" alt="logo" class="logo" />
+
+        <h1 class="converter-title">Time Converter</h1>
+        <div class="inputs">
+            <input type="text" placeholder="I N P U T" id="input">
+            <input type="text" placeholder="R E S U L T" id="result">
+        </div>
+        <br />
+        <div>
+            <select id="inputType">
+                <option value="second"> S e c o n d</option>
+                <option value="hour">H o u r</option>
+                <option value="minute"> M i n u t e</option>
+            </select>
+
+            <select id="resultType">
+                <option value="second"> S e c o n d</option>
+                <option value="hour">H o u r</option>
+                <option value="minute"> M i n u t e</option>
+            </select>
+        </div>
+
+    </div>
+    <script>
+        var input = document.getElementById('input');
+        var result = document.getElementById('result');
+        var inputType = document.getElementById('inputType');
+        var resultType = document.getElementById('resultType');
+        var inputTypeValue,resultTypeValue;
+
+
+        input.addEventListener("keyup",myResult);
+        inputType.addEventListener("change",myResult);
+        resultType.addEventListener("change",myResult);
+
+        inputTypeValue = inputType.value;
+        resultTypeValue = resultType.value;
+
+        function myResult(){
+
+        inputTypeValue = inputType.value;
+        resultTypeValue = resultType.value;
+
+        if(inputTypeValue === "second" && resultTypeValue==="minute"){
+
+        // meter to kilometer
+        result.value = Number(input.value) * 0.0166666667 ;
+        }else if(inputTypeValue === "second" && resultTypeValue==="hour"){
+        // meter to Centimeter
+        result.value = Number(input.value) *0.000277777778 ;
+        
+        }else if(inputTypeValue === "second" && resultTypeValue==="second"){
+        // meter to meter
+        result.value = input.value
+        }
+
+
+        if(inputTypeValue === "hour" && resultTypeValue==="second"){
+        // kilometer to meter
+        result.value = Number(input.value) * 3600   ;
+        }else if(inputTypeValue === "hour" && resultTypeValue==="minute"){
+        // kilometer to Centimeter formula
+        result.value = Number(input.value) * 60;
+        }else if(inputTypeValue === "hour" && resultTypeValue==="hour"){
+        // kilometer to kilometer formula
+        result.value = input.value
+        }
+
+        if(inputTypeValue === "minute" && resultTypeValue==="hour"){
+        // Centimeter to kilometer formula
+        result.value = Number(input.value) * 0.0166666667;
+        }else if(inputTypeValue === "minute" && resultTypeValue==="second"){
+        // Centimeter to meter formula
+        result.value = Number(input.value) * 60;
+        }else if(inputTypeValue === "minute" && resultTypeValue==="minute"){
+        // Centimeter to Centimeter formula
+        result.value = input.value
+        }
+
+
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>

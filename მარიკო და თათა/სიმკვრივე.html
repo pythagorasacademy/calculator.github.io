@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სიმკვრივე</title>
+    <link rel="stylesheet" href="სიმკვრივე.css">
+    <link rel="icon" href="https://www.obrazov.org/upload/iblock/819/819fe07515a3133a9c4f6c6b3e04d4b3.png">
+</head>
+<body></br></br></br>
+    <header class="main-header">
+        <main class="maini">
+    <h1>სიმკვრივე</h1></br></br>
+    <h3>ვიპოვოთ ρ (რო)</h3></br></br>
+    <label>ჩაწერეთ მასა</label><input type="number" placeholder="კგ" id="masa"/></br></br>
+    <label>ჩაწერეთ მოცულობა</label><input type="number" placeholder="მ³" id="moculoba"/></br></br>
+    <button onclick="ro()" class="BtnR">ვიპოვოთ რო</button></br></br></br></br>
+    <h3>ვიპოვოთ V (მოცულობა)</h3></br>
+    <label>ჩაწერეტ მასა</label><input type="number" placeholder="კგ" id="wona"/></br></br>
+    <label>ჩაწერეტ სიმკვრივე</label><input type="number" placeholder="კგ/მ³" id="ro"/></br></br>
+    <button onclick="moculoba()" class="BtnV">ვიპოვოთ მოცულობა</button></br></br></br>
+    <h3>ვიპოვოთ m (მასა) </h3></br>
+    <label>ჩაწერეთ მოცულობა</label><input type="number" placeholder="მ³" id="moculobaa"/></br></br>
+    <label>ჩაწერეთ სიმკვრივე</label><input type="number" placeholder="კგ/მ³" id="simkvrive"/></br></br>
+    <button onclick="masa()" class="BtnF">ვიპოვოთ მასა</button></br></br>
+<hr>
+</br>
+<button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+<button onclick="window.location.href='ფიზიკა.html'" class="gadasvla2">თეორიების და ფორმულების გვერდზე გადასვლა</button></br></br>
+</main>
+</header>   
+</br></br>
+</body>
+<script>
+    function ro() {
+        var masa = parseInt(document.getElementById("masa").value);
+        var moculoba = parseInt(document.getElementById("moculoba").value);
+        var sum = masa / moculoba;
+        alert("ρ = " + sum);
+    }
+
+    function moculoba() {
+        var wona = parseInt(document.getElementById("wona").value);
+        var ro = parseInt(document.getElementById("ro").value);
+        var sum = wona / ro;
+        alert("V = " + sum);
+    }
+    
+    function masa() {
+        var moculobaa = parseInt(document.getElementById('moculobaa').value);
+        var simkvrive = parseInt(document.getElementById('simkvrive').value);
+        var sum = moculobaa * simkvrive;
+        alert('m = ' + sum);
+    }
+</script>
+</html>

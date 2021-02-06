@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სამკუთხედის შემოწმება</title>
+    <link rel="stylesheet" href="სამკუთხედის შემოწმება.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+</br></br></br>
+<body>
+    <header class="main-header">
+        <main class="maini">
+    <h1>სამკუთხედის შემოწმება</h1></br></br>
+    <label>პირველი რიცხვი</label><input type="number" placeholder="პირველი რიცხვი" id="ricxvi11"/></br></br>
+    <label>მეორე რიცხვი</label><input type="number" placeholder="მეორე რიცხვი" id="ricxvi12"/></br></br>
+    <label>მესამე რიცხვი</label><input type="number" placeholder="მესამე რიცხვი" id="ricxvi13"/></br></br>
+    <button onclick="samkutxedi()" class="BtnT">სამკუთხედის შემოწმება</button></br></br>
+    <p> როგორ შევამოწმოთ სამკუთხედი? </br></br> სამკუთხედის  შემოწმების წესი ასეთია: სამკუთხედის ორი გვერდის ჯამი აუცილებრად უნდა იყოს მესამეზე მეტი. </p></br></br>
+    <hr>
+</br> 
+    
+    <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+    <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+      function samkutxedi() {
+            var ricxvi11 = parseInt(document.getElementById("ricxvi11").value);
+            var ricxvi12 = parseInt(document.getElementById("ricxvi12").value);
+            var ricxvi13 = parseInt(document.getElementById("ricxvi13").value);
+            if(ricxvi11 + ricxvi12 > ricxvi13 && ricxvi12 + ricxvi13 > ricxvi11 && ricxvi13 + ricxvi11 > ricxvi12){
+                alert("სამკუთხედი შედგება");
+            }else{
+                alert("სამკუთხედი არ შედგება");
+            }
+        }
+</script>
+</html>

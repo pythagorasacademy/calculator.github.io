@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>კვადრატში აყვანა</title>
+   <link rel="stylesheet" href="kvadratshi ayvana.css">
+   <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head></br>
+<body>
+    <header class="main-header">
+     <main class="maini">
+        <h1>რიცხვების კვადრატში აყვანა</h1></br></br></br>
+        <p>ჩაწერეთ მოცემულ უჯრაში სასურველი რიცხვი, შემდეგ კი დააჭირეთ ღილაკს.</p>
+     </br>
+    </br>
+        <label>ჩაწერეთ რიცხვი</label><input type="number" placeholder="შემოიტანეთ რიცხვი" id="ricxvi"/></br></br>
+        <button onclick="kvadrati()" class="BtnK">კვადრატში აყვანა</button>
+</br>
+</br>
+        <p>რას ნიშნავს კვადრატში აყვანა? ამას გაიგებთ შემდეგ საიტზე</p>
+</br>
+</br>
+    <button onclick="window.location.href='https://ka.khanacademy.org/math/algebra-basics/basic-alg-foundations/alg-basics-exponents/a/squaring-numbers-exp'" class="BtnS">გავიგოთ რას ნიშნავს კვადრატში აყვანა?</button></br></br>
+    <p>(ინფორმაციის წვდომას ვაკეთებთ ხანის აკადემიის საიტზე)</p></br></br>
+  <hr>
+</br>
+    <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+    <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+</br>
+
+</main>
+     </header>
+     </br>
+     </body>
+<script>
+      function kvadrati() {
+            var ricxvi = parseInt(document.getElementById("ricxvi").value);
+            var sum = ricxvi * ricxvi;
+            alert("ამ რიცხვის კვადრატი არის" + sum);
+        }
+</script>
+</html> 

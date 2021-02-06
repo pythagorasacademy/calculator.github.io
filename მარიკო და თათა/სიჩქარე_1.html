@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სიჩქარე</title>
+    <link rel="stylesheet" href="სიჩქარე.css">
+    <link rel="icon" href="https://www.obrazov.org/upload/iblock/819/819fe07515a3133a9c4f6c6b3e04d4b3.png">
+</head>
+<body>
+</br></br></br>
+    <header class="main-header">
+        <main class="maini">
+    <h1>სიჩქარე</h1></br></br>
+    <h3>გავიგოთ სიჩქარე</h3></br></br>
+    <label>ჩაწერეთ S (მანძილი)</label><input type="number" placeholder="კმ" id="mandzili"/></br></br>
+    <label>ჩაწერეთ T (დრო)</label><input type="number" placeholder="სთ" id="dro"/></br></br>
+    <button onclick="sichqare()" class="BtnF">ვიპოვოთ სიჩქარე</button></br></br>
+</br></br>
+    <h1>დრო</h1></br></br>
+    <h3>გავიგოთ დრო</h3></br></br>
+    <label> ჩაწერეთ S (მანძილი)</label><input type="number" placeholder="კმ" id="ganvlili"/></br></br>
+    <label>ჩაწერეთ V (სიჩქარე)</label><input type="number" placeholder="კმ/სთ" id="sichqare"/></br></br>
+    <button onclick="dro()" class="time">ვიპოვოთ დრო</button></br></br>
+</br></br>
+    <h1>განვლილი მანძილი</h1></br></br>
+    <h3>გავიგოთ განვლილი მანძილი</h3></br></br>
+    <label>ჩაწერეთ T (დრო)</label><input type="number" placeholder="სთ" id="time"/></br></br>
+    <label>ჩაწერეთ V (სიჩქარე)</label><input type="number" placeholder="კმ/სთ" id="speed"/></br></br>
+    <button onclick="ganvliliMandzili()" class="BtnM">ვიპოვოთ განვლილი მანძილი</button></br></br>
+</br></br>
+    <hr>
+</br></br>
+    <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+    <button onclick="window.location.href='ფიზიკა.html'" class="gadasvla2">თეორიების და ფორმულების გვერდზე გადასვლა</button></br></br>
+        </main>
+    </header>
+</br></br>
+
+</body>
+<script>
+    function sichqare() {
+        var mandzili = parseInt(document.getElementById('mandzili').value);
+        var dro = parseInt(document.getElementById('dro').value);
+        var sum = mandzili / dro;
+        alert('V = ' + sum);
+    }
+
+    function dro() {
+        var ganvlili = parseInt(document.getElementById('ganvlili').value);
+        var sichqare = parseInt(document.getElementById('sichqare').value);
+        var sum = ganvlili / sichqare;
+        alert('T = ' + sum);
+    }
+
+    function ganvliliMandzili() {
+        var time = parseInt(document.getElementById('time').value);
+        var speed = parseInt(document.getElementById('speed').value);
+        var sum = time *  sichqare;
+        alert('S = ' + sum)
+    }
+</script>
+</html>

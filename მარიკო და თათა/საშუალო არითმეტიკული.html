@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>საშუალო არითმეტიკული</title>
+    <link rel="stylesheet" href="საშუალო არითმეტიკა.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+<body>
+    <header class="main-header">
+        <main class="maini"></br></br>
+    <h1>საშუალო არითმეტიკულის გამოთვლა</h1></br></br>
+    <p>დააჭირეთ ღილაკს და შეიყვანეთ რიცხვების რაოდენობა, შემდეგ კი რიცხვები.</p>
+</br></br></br>
+    <button onclick="sashualo()" class="BtnA">საშუალო არითმეტიკულის გამოთვლა</button></br></br>
+    <p>თუ გაინტერესებთ რა არის საშუალო არითმეტიკული შედით ქვემოთ მითითებულ საიტზე.</p></br></br>
+    <button window.location.href=" https://ka.khanacademy.org/math/6th-grade-ka/x8f9bd9631d0c2ffa:monatsemebi-statistika/x8f9bd9631d0c2ffa:monatsemta-analizi/a/calculating-the-mean" class="BtnL"> გავიგოთ რა არის საშუალო არითმეტიკული</button></br></br>
+       <p>(ინფორმაციის წვდომას ვაკეთებთ ხანის აკადემიის საიტზე)</p></br></br>
+<hr>
+</br>
+       <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+       <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+        </main>
+    </header>
+</body>
+<script>
+    function sashualo() {
+        var sashualo = [];
+        var masiviSigrdze = parseInt(prompt('ჩაწერეთ რიცხვების რაოდენობა'));
+        var sum = 0;
+        var sashualoAritmetika = 0;
+        for(i = 0; i < masiviSigrdze; i++) {
+            var elementi = parseInt(prompt('შემოიტანეთ' + (masiviSigrdze-i) + 'ცალი რიცხვი'));
+            sashualo.push(elementi);
+            sum = sum + sashualo[i];
+            sashualoAritmetika = sum/masiviSigrdze
+        }
+        alert('საშუალო არითმეტიკული უდრის' + sashualoAritmetika)
+    }
+</script>
+</html>

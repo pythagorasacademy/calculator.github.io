@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>კვადრატის ფართობი და პერიმეტრი</title>
+    <link rel="stylesheet" href="kvad. fart. da per.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+</br></br></br>
+<body>
+    <header class="main-header">
+        <main class="maini">
+    <h1>გამოვითვალოთ კვადრატის ფართობი</h1></br></br>
+    <label>შემოიყვანეთ რიცხვი</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="fartobi"/></br></br>
+    <button onclick="kvadratisFartobi()" class="BtnF">ფართობის გამოთვლა</button></br></br></br>
+       
+    <h1>გამოვითვალოთ კვადრატის პერიმეტრი</h1></br></br></br>
+    <label>შემოიყვანეთ გვერდის სიგრძე</label><input type="number" placeholder="მიუთითეთ გვერდი" id="pirveli"/></br></br>
+    <button onclick="kvadratisPerimetri()" class="BtnP">პერიმეტრის გამოთვლა</button></br></br>
+    <hr>
+</br> 
+    <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+    <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+    function kvadratisFartobi() {
+        var fartobi = parseInt(document.getElementById('fartobi').value);
+        var sum = fartobi * fartobi;
+        alert('კვადრატის ფართობია ' + sum);
+    }
+
+    function kvadratisPerimetri() {
+        var pirveli = parseInt(document.getElementById('pirveli').value);
+        var sum = pirveli * 4;
+        alert('კვადრატის პერიმეტრია ' + sum);
+    }
+</script>
+</html>

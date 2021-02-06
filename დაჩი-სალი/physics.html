@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <style>
+   </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>physics page</title>
+        <link rel="stylesheet" href="physics.css">
+ </head>
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="pythagora.png" alt="logo" class="logo">
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-links">
+                        <ul class="navigation-links">
+                            <div class="navbar">
+                                <a href="#" onclick="window.open('pageninomaswi.html')">მთავარი</a>
+                                <div class="dropdown">
+                                <button class="dropbtn" onclick="myFunction()">ფორმულები<i class="fa fa-caret-down"></i></button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#sichqare">სიჩქარე</a>
+                                    <a href="#energiebi">ენერგიები</a>
+                                    <a href="#simkvrive">სიმკვრივე</a>
+                                    <a href="#mushaoba">მუშაობა</a>
+                                    <a href="#simzhlavre">სიმძლავრე</a>
+                                    <a href="#niutoni">ნიუტონის კანონები</a>
+                                    <a href="#kankulatori">კალკულატორის გამოყენება</a>
+
+
+                                </div>
+                                </div> 
+                              </div>
+                              
+                                  
+                                </div>
+                              </div>
+                        </ul>
+                    </nav>
+                </div>
+            
+            </header>
+            <main class="main">
+            <div class="main-subjects--headerstyle=" style="background-color:#F7DC6F">
+                <h1 class="main-subjects--header--h1" id="formulebi">ფორმულები</h1>
+                <h2 class="main-subjects--header--text" id="sichqare">სიჩქარე, დრო და მანძილი</h2>
+                <div class="form-box">
+                    <label>მანძილი(S)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მანძილი" id="manzili" required>
+                    <br>
+                    <label>დრო(t)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ დრო" id="dro" required>
+                    <br>        
+                    <button class="marginBottom" onclick ="sichqarisGamotvla()">სიჩქარის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <label>მანძილი(S)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მანძილი" id="manzili1" required>
+                    <br>
+                    <label>სიჩქარე(V)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიჩქარე" id="sichqare" required>
+                    <br>
+                    <button class="marginBottom" onclick ="droisGamotvla()">დროის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <label>სიჩქარე(V)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიჩქარე" id="sichqare1" required>
+                    <br>
+                    <label>დრო(t)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ დრო" id="dro1" required>
+                    <br> 
+                    <button class="marginBottom" onclick ="manzilisGamotvla()">მანძილის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="energiebi">ენერგიები</h2>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;" >პოტენციური ენერგია</h3>
+                    <br>
+                    <label>სიმაღლე(h)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიმაღლე" id="simagle2" required>
+                    <br>
+                    <label>მასა(m)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მასა" id="masa" required>
+                    <br>        
+                    <button class="marginBottom" onclick ="potentialEnergy ()">პოტენციური ენერგიის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 style="text-align: center; color: darkblue; background-color: #F5CBA7; width: 230px; padding: 10px; border-radius: 15px;" >კინეტიკური ენერგია</h3>
+                    <br>
+                    <label>მასა(m)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მასა" id="masa1" required>
+                    <br>
+                    <label>სიჩქარე(V)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიჩქარე" id="sichqare5" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="kynetikEnergy ()">კინეტიკური ენერგიის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="simkvrive">სიმკვრივე</h2>
+                    <label>მასა(m)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მასა" id="masa2" required>
+                    <br>
+                    <label>მოცულობა(v)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მოცულობა" id="moculoba" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="simkvrivisGamotvla ()">სიმკვრივის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="mushaoba">მუშაობა</h2>
+                    <label>მასა(m)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მასა" id="masa3" required>
+                    <br>
+                    <label>სიმაღლე(h)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სიმაღლე" id="simagle6" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="mushaobisGamotvla()">მუშაობის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <label>სხეულზე მოქმედი ძალა(f)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანთ სხეულზე მოქმედი ძალა" id="sxeulzeMoqmediZala2" required>
+                    <br>
+                    <label>მანძილი</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მანძილი" id="distance" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="meqanikurimushaoba ()">მექანიკური მუშაობის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="simzhlavre">სიმძლავრე</h2>
+                    <br>
+                    <label>მუშაობა(a)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ მუშაობა" id="mushaoba" required>
+                    <br>
+                    <label>დრო(t)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ დრო" id="dro5" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="simzlavrisGamotvla ()">სიმძლავრის გამოთვლა</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="niutoni">ნიუტონის კანონები</h2>
+                    <br>
+                    <label>სხეულზე მოქმედი ძალა(f)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ სხეულზე მოქმედი ძალა" id="sxeulzeMoqmediZala1" required>
+                    <br>
+                    <label>მასა(m)</label><input class="inputClass marginBottom" type="number" placeholder="შეიყვანეთ დრო" id="masa9" required>
+                    <br>                
+                    <button class="marginBottom" onclick ="niutonisMeoreKanoni()">ნიუტონის მეორე კანონის გამოთვლა</button>
+                    <br>
+                    <h2 class="main-subjects--header--text" id="kankulatori" style="background-color:#D2B4DE">კალკულატორი</h2>
+                    <button id="myBtn" style="background-color: #E74C3C;" onclick="canculator()">კალკულატორის გამოყენება</button>
+                    <br>
+                    <br>
+                    
+        </div>
+            </div>
+            </main>
+        </header>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calculator">
+                <div class="history">
+                    <div class="display">
+                      <p id="output" style="background-color: pink;">0</p>
+                    </div>
+                </div>
+           </div>
+                <div class="keypad">
+                  <div class="first-row">
+                      <button  style="padding: 10px; width: 138px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r1-1"  onclick="forclear()">C</button>
+                      <button  style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r1-3" onclick="perc()" >%</button>
+                      <button  style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r1-4" onclick="fordisplay('/')">/</button>
+                   </div>
+                   <div class="second-row">
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r2-1" onclick="fordisplay('7')">7</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r2-2" onclick="fordisplay('8')">8</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r2-3" onclick="fordisplay('9')">9</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r2-4" onclick="fordisplay('*')">x</button>
+                   </div>
+                   <div class="third-row">
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r3-1" onclick="fordisplay('4')">4</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r3-2" onclick="fordisplay('5')">5</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r3-3" onclick="fordisplay('6')">6</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r3-4" onclick="fordisplay('-')">-</button>
+                   </div>
+                   <div class="fourth-row">
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r4-1" onclick="fordisplay('1')">1</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r4-2" onclick="fordisplay('2')">2</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r4-3" onclick="fordisplay('3')">3</button>
+                      <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r4-4" onclick="fordisplay('+')">+</button>
+                   </div>
+                   <div class="fifth-row">
+                     <button style="padding: 10px; width: 138px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"id="r5-1" style="width: 138px;" onclick="fordisplay('0')">0</button>
+                     <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;" id="r5-2" onclick="fordisplay('.')">.</button>
+                     <button style="padding: 10px; width: 67px; height: 45px; margin-top: 10px; background-color: #c8a2c8;color:white; font-size: 20px;"  id="r5-3" value="=" onclick="solve()">=</button>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+          </div>
+        
+        </div>
+        </div>
+
+		<footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Pythagoras<span>Academy</span></h3>
+            <p class="footer-links">
+            <a href="#">მთავარი</a>
+            <a href="#">ჩვენს შესახებ</a>
+            <a href="#">კონტაქტი</a>
+            </p>
+            <span style="color: #BB8FCE;">&copy Pythagoras | Tbilisi, <script>document.write(new Date().getFullYear())</script> ყველა უფლება დაცულია</span>
+            </div>
+            <div class="footer-center">
+            <div>
+            <i class="fa fa-map-marker"></i>
+            <p style="color:#28B463;"><span>7 Sandro Euli Street</span> Tbilisi, Georgia</p>
+            </div>
+            <div>
+            <i class="fa fa-phone"></i>
+            <p style="color: blueviolet;">+995 555 87 87</p>
+            </div>
+            <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">pythagorasacademy.ge@gmail.com</a></p>
+            </div>
+            </div>
+            <div class="footer-right">
+            <p class="footer-company-about">
+            <span>აკადემიის შესახებ</span>
+            ცენტრში სწავლება ეფუძნება სწავლების მრავაფეროვან,მრავალმხრივ და არასტანდარტულ მეთოდებს მოსწავლეების ასაკის შესაბამისად.
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/pitagora.ge"><i class="fafa-facebook"><img src="facebook logo.png" style="height: 20px 20px;
+                width: 28px;" /></i></a>
+            <a href="#"><i class="fafa-twitter"><img src="Twitter logo.png" style="height: 20px 20px;
+                width: 36px; " /></i></a>
+            <a href="#"><i class="fafa-instagram"><img src="instagram logo.png" style="height: 20px 20px;
+                width: 35px;" /></i></a>
+            </div>
+      </div>
+     
+        </body>
+     
+    </html>
+    
+        
+    </body>
+
+<script>
+    function sichqarisGamotvla() {
+    var dro= parseInt(document.getElementById("dro").value);
+    var manzili= parseInt(document.getElementById("manzili").value);
+    var shedegi = manzili/dro;
+    alert("სიჩქარე არის: "+ shedegi);
+}
+
+function droisGamotvla() {
+    var sichqare= parseInt(document.getElementById("sichqare").value);
+    var manzili1= parseInt(document.getElementById("manzili1").value);
+    var shedegi = manzili1/sichqare;
+    alert("დრო არის: "+ shedegi);
+}
+
+function manzilisGamotvla() {
+    var sichqare1= parseInt(document.getElementById("sichqare1").value);
+    var dro1= parseInt(document.getElementById("dro1").value);
+    var shedegi = dro1*sichqare1;
+    alert("მანძილი არის: "+ shedegi);
+}
+
+function potentialEnergy () {
+    var simagle2= parseInt(document.getElementById("simagle2").value);
+    var masa= parseInt(document.getElementById("masa").value);
+    var shedegi = simagle2*masa*10;
+    alert("პოტენციური ენერგია არის: "+ shedegi);
+}
+
+function kynetikEnergy () {
+    var sichqare5= parseInt(document.getElementById("sichqare5").value);
+    var masa1= parseInt(document.getElementById("masa1").value);
+    var shedegi = (masa1*(sichqare5*sichqare5))/2;
+    alert("კინეტიკური ენერგია არის: "+ shedegi);
+}
+
+function simkvrivisGamotvla () {
+    var moculoba= parseInt(document.getElementById("moculoba").value);
+    var masa2= parseInt(document.getElementById("masa2").value);
+    var shedegi = masa2/moculoba ;
+    alert("სიმკვრივე არის: "+ shedegi);
+}
+
+function mushaobisGamotvla () {
+    var simagle6= parseInt(document.getElementById("simagle6").value);
+    var masa3= parseInt(document.getElementById("masa3").value);
+    var shedegi = masa3*simagle6*10;
+    alert("მუშაობა არის: "+ shedegi);
+}
+
+function simzlavrisGamotvla () {
+    var mushaoba= parseInt(document.getElementById("mushaoba").value);
+    var dro5= parseInt(document.getElementById("dro5").value);
+    var shedegi = mushaoba/dro5;
+    alert("სიმძლავრე არის: " + shedegi);
+}
+
+function  meqanikurimushaoba (){
+    var sxeulzeMoqmediZala2= parseInt(document.getElementById("sxeulzeMoqmediZala2").value);
+    var distance = parseInt(document.getElementById("distance").value);
+    var shedegi = sxeulzeMoqmediZala2*distance;
+    alert("მექანიკური მუშაობა არის: " + shedegi);
+}
+
+function niutonisMeoreKanoni() {
+    var sxeulzeMoqmediZala1= parseInt(document.getElementById("sxeulzeMoqmediZala1").value);
+    var masa9 = parseInt(document.getElementById("masa9").value);
+    var shedegi = sxeulzeMoqmediZala1/masa9;
+    alert("პასუხი არის: "+shedegi);
+}
+
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function forclear() {
+      document.getElementById("output").innerHTML = "0";
+}
+
+   function removeZero() {
+      var value = document.getElementById("output").innerHTML;
+      if (value == "0") {
+           value = " "
+           document.getElementById("output").innerHTML = value;
+      }
+}
+
+    function perc() {
+      var value = document.getElementById("output").innerHTML;
+      value = value / 100;
+      document.getElementById("output").innerHTML = value;
+}
+
+   function fordisplay(value) {
+      removeZero()
+      document.getElementById("output").innerHTML += value;
+}
+
+   function solve() {
+     removeZero()
+     var equation = document.getElementById("output").innerHTML;
+     var solved = eval(equation);
+     document.getElementById('output').innerHTML = solved;
+}
+
+
+
+</script>
+
+</html>

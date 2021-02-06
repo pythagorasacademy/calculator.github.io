@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>პითაგორას თეორემა</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pitagoris.css">
+</head>
+<style>
+    body{
+    background-color: rgb(228, 220, 177);
+    margin-top: 60px;
+    margin-left: 400px;
+
+}
+
+.title {
+    background-color: goldenrod;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: 4px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-style: oblique;
+}
+
+.main{
+    margin-left: 190px;
+    margin-top: 40px;
+
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+    border: 4px  ;
+    border-radius: 5px;
+    background-color: rgb(247, 246, 241);
+    font-size: medium;
+    margin: 20px;
+    
+}
+
+button {
+    background-color: indianred;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+h4{
+    margin-left: 130px;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+label {
+    font-weight: bold;
+}
+ 
+
+</style>
+
+<body>
+    <div class="title">
+    <h1>პითაგორას ფორმულა</h1>
+    <h2>ჰიპოტენუზას გამოთვლა</h2>
+</div>
+<div class="main">
+<div class="katetebi">
+    <label for="gverdi1">პირველი კათეტი</label>
+    <input type="number" name="gverdi1" id="gverdi1">
+    <br>
+    <label for="gverdi2">მეორე კათეტი</label>
+    <input type="number" name="gverdi2" id="gverdi2">
+    </div>
+    <br>
+    <button onclick="gamotvla()">ჰიპოთენუზის გამოთვლა</button>
+    <h4 id="pasuxisChveneba" class="pasuxi">პასუხი</h4>
+</div>
+
+</body>
+<script>
+    function gamotvla(){
+    var gverdi1= parseInt(document.getElementById("gverdi1").value);
+    var gverdi2= parseInt(document.getElementById("gverdi2").value);
+    var shedegi = gverdi1*gverdi1 + gverdi2*gverdi2;
+    var hipoShedegi = Math.sqrt(shedegi)
+    console.log("ჰიპოთენუზას კვადრატი უდრის:" + hipoShedegi);
+    document.getElementById("pasuxisChveneba").innerHTML = "ჰიპოთენუზას კვადრატი უდრის:" + hipoShedegi;
+    document.getElementById("pasuxisChveneba").style.cssText= "color: black;"
+}
+
+
+</script>
+
+</html>

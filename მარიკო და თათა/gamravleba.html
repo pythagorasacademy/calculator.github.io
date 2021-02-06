@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>გამრავლება</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+    <link rel="stylesheet" href="gamravleba.css">
+</head>
+<body>
+</br>
+</br>
+    <header class="main-header">
+        <main class="maini"></br></br>
+    <h1>რიცხვების გამრავლება</h1></br></br>
+    <label>პირველი რიცხვი</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="ricxvi1"/></br></br>
+    <label>მეორე რიცხვი</label><input type="number" placeholder="ჩაწერეთ რიცხვი" id="ricxvi2"/></br></br>
+    <button onclick="namravli()" class="BtnR">ნამრავლის გამოთვლა</button></br></br></br></br>
+    <hr>
+</br> 
+    <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+    <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+     function namravli() {
+            var ricxvi1 = parseInt(document.getElementById("ricxvi1").value);
+            var ricxvi2 = parseInt(document.getElementById("ricxvi2").value);
+            var sum = ricxvi1 * ricxvi2;
+            alert("ამ ორი რიცხვის ნამრავლი არის" + sum);
+        }
+</script>
+</html>
+

@@ -1,0 +1,332 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.header {
+    background-color: rgb(28, 66, 136);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+        width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+ul{
+    position: absolute; left: 600px;
+    list-style-type: none;
+    margin-top: 20px;
+    justify-content: space-between; 
+}
+
+a {
+    color: rgb(8, 4, 63);
+    font-style: unset;
+}
+
+ul li{
+     background-color: rgb(200, 216, 216);      
+      display: inline-block;
+     list-style: none;
+     border: 4px groove rgb(124, 198, 247);
+     border-radius: 15px 15px;
+     padding: 10px;
+     font-size: 20px;
+     font-weight: lighter;
+     cursor: pointer;
+     margin-right: 60px;
+
+
+}
+
+.logo {
+    margin: 0px;
+    max-width: 120px;
+    position:absolute; 
+    left: 40px;
+    top: 6px;
+}
+
+
+
+
+
+/* main განყოფილება */
+.main{
+    background-color: rgb(203, 221, 253);
+    min-height: calc(100vh - 100px - 300px - 50px);
+    width: 100%;
+    margin: auto;
+}
+
+.main-subjects--header--text{
+    font-size: 30px;
+    margin: 30px auto;
+    color: rgb(221, 119, 3);
+    background-color: rgb(214, 212, 182);
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 40px 0;
+
+}
+
+.main-subjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dropbtn {
+    background-color:rgb(9, 21, 43);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute; top: 164px;
+    background-color: rgb(28, 66, 136);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    margin-left: 170px;
+
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(9, 21, 43); border-radius: 10px;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:rgb(9, 21, 43);}
+
+
+.main-subjects button{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(208, 207, 236);
+    width: 400px;
+    padding: 10px;
+    height: 100px;
+    margin: 60px;
+    border: 2px ;
+    border-radius: 20px;
+    background-color: rgb(28, 66, 136);
+}
+
+.main-subjects button:hover{
+    cursor: pointer;
+    background-image: none;
+    background-color: rgb(9, 21, 43);
+    color: rgb(232, 233, 240);
+    
+}
+
+
+
+/* გუნდის წევრების განყოფილება */
+.main-team{
+    background-color: rgb(95, 110, 160);
+}
+
+.main-team--header{
+    /* text-align: center;
+    color: rgb(38, 83, 141); */
+    font-size: 30px;
+    margin: 30px auto;     
+     width: 400px;
+    text-align: center;
+    color: rgb(6, 44, 114);
+    padding: 10px;
+    border-radius: 0 40px;
+}
+
+.main-team--container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.main-team--person{
+    width: 220px;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+img{
+    width: 210px;
+}
+.mariami{
+    width: 190px;
+}
+
+.main-team--person:hover{
+    background-color: rgb(146, 145, 199);
+    cursor: pointer;
+}
+
+.main-team--person img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.main-team--person--name{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* footer განყოფილება */
+.footer-container {
+    /* background-color: darkgray; */
+    height: 300px;
+    background-color: rgb(150, 170, 204);
+    margin-top: -20px;
+}
+
+.footer-LeftRightSections {
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+
+.footer-left {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.footer-left--about{
+    width: 400px;
+    margin-top: 40px;
+}
+
+.footer-left--about--header{
+    margin-bottom: 20px;
+}
+
+
+.footer-right {
+    width: 600px;
+    height: 250px;
+    margin-top: 30px;
+    
+}
+
+.footer-right--contactHeader {
+    text-align: center;
+    color: rgb(8, 29, 56);
+}
+
+.contact-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contact-input-styles{
+    height: 30px;
+    padding: 0 20px;
+}
+
+.contact-container--text{
+    height: 80px;
+    padding: 0 20px;
+}
+
+.contact-container--btn{
+    height: 30px;
+    width: 160px;
+    margin: 5px auto;
+    font-size: 20px;
+    border: 1px solid  rgb(8, 29, 56);
+    border-radius: 5px;
+    color: rgb(38, 83, 141);
+}
+
+.contact-container--btn:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.contact-container input{
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.contact-container input::placeholder{
+    color:rgb(41, 109, 212);
+}
+
+
+.footer-copyright{
+    background-color: rgb(201, 209, 230);;
+    height: 50px;
+}
+
+.footer-copyright{
+        height: 50px;}
+
+.footer-copyright--content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-copyright--content span{
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-team--person{
+        width: 200px;
+        margin: 0 20px;
+        border: 1px solid rgb(204, 204, 34);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .main-team--container{
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+
+}

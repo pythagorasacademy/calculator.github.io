@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(90deg,#55e7fc,#0162c8);   
+    margin-left: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-top: -10px;
+    top: 50px;
+    background-image: url(https://cdn.wallpapersafari.com/81/38/g8mQwz.jpg);
+    background-size: 2000px;
+  }
+  
+  #button {
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    background: linear-gradient(90deg,#755bea, #ff72c0);
+    border-radius: 17px;
+  }
+  
+  p {
+    color: #163b63b6;
+    font-size: 15.7px;
+  }
+  
+  h2 {
+    color: rgb(216, 42, 216);
+  }
+  
+  
+  

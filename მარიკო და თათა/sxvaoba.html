@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სხვაობის გამოთვლა</title></br></br>
+    <link rel="stylesheet" href="sxvaoba.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/dd/37/03/dd3703c08a47b6b6ad238ebd5ea5e303.png">
+</head>
+<body>
+    <header class="main-header">
+        <main class="maini">
+    <h1>სხვაობის გამოთვლა</h1></br></br>
+    <label>ჩაწერეთ პირველი რიცხვი</label><input type="number" placeholder="შემოიტანეთ რიცხვი" id="ricxvi1"/></br></br>
+    <label>ჩაწერეთ მეორე რიცხვი</label><input type="number" placeholder="შემოიტანეთ რიცხვი" id="ricxvi2"/></br></br>
+    <button onclick="sxvaoba()" class="BtnX">სხვაობა</button></br></br>
+    <p>რა არის გამოკლება?</br> ამას იხილავთ მოცემულ საიტზე</p></br></br>
+    <button onclick="window.location.href='https://ka.khanacademy.org/math/arithmetic/arith-review-add-subtract'" class="BtnS"> გავიგოთ რა არის სხვაობა</button></br></br>
+      <p>(ინფორმაციის წვდომას ვაკეთებთ ხანის აკადემიის საიტზე)</p></br></br>
+      <hr>
+</br> 
+      <button onclick="window.location.href='მოქმედებები.html'" class="gadasvla">მთავარ გვერდზე გადასვლა</button></br></br>
+      <button onclick="window.location.href='math.html'" class="gadasvla2">ალგებრის და გეომეტრიის გვერდზე გადასვლა</button></br></br>
+
+        </main>
+    </header>
+</body>
+<script>
+   function sxvaoba(){
+    var ricxvi1 = parseInt(document.getElementById("ricxvi1").value);
+            var ricxvi2 = parseInt(document.getElementById("ricxvi2").value);
+            var sum = ricxvi1 - ricxvi2;
+            alert("ამ ორი რიცხვის სხვაობაა" + sum);
+   }
+</script>
+</html>

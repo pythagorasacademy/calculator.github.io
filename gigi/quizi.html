@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ქუიზი</title>
+    <link rel="stylesheet" href="quizi.css">
+    <link rel="icon" href="https://lh3.googleusercontent.com/2mXzA8PB7NPnXWD5Jv6AOuXBLX24IsyvZ-VDsL6NytzpTDDuoYXc82p00enGkRcv2w=w300">
+</head>
+<body>
+    <h1>მოეგესალმებით!</h1>
+
+    <button onclick="daawiret()" >დააჭირეთ </button>
+
+    <p>1.დააჭირეთ სწორ პასუხს, 11*13=? </p>
+
+    <input type="radio" name="gender" id="143" >
+            <label >143</label>
+            <br>
+            <input type="radio" name="gender" id="147" >
+            <label >147</label>
+            
+
+    <button onclick="skitxva1()">პირველი კითხვის შემოწმება</button>
+
+    <p>2.რომელი რიცხვის კვადრატია, 400?</p>
+
+    <input type="radio" name="gender" id="22" >
+            <label for="famale">22</label>
+            <br>
+            <input type="radio" name="gender" id="20" >
+            <label for="male">20</label>
+
+            <button onclick="skitxva2()">მეორე კითხვის შემოწმება</button>
+
+
+            <p>3.შედგება თუ არა სამკუთხედი თუ მისი გვერდებია, 12,28,13?</p>
+
+            <input type="radio" name="gender" id="ki" >
+            
+                    <label for="famale">კი</label>
+                    <br>
+                    <input type="radio" name="gender" id="ara">
+                    <label for="male">არა</label>
+        
+                    <button onclick="skitxva3()">მესამე კითხვის შემოწმება</button>
+
+
+                    <p>4.რას უდრის 25_ის კუბი?</p>
+
+                    <input type="radio" name="gender" id="625" class="radio">
+                            <label for="famale">625</label>
+                            <br>
+                            <input type="radio" name="gender" id="630"class="radio">
+                            <label for="male">630</label>
+                
+                            <button onclick="skitxva4()">მეოთხე კითხვის შემოწმება</button>
+
+         
+                            <p>5.გამოითვალეთ სამკუთხედის პერიმეტრი თუ გვერდებია 9,7,8.</p>
+
+                            <input type="radio" name="gender" id="25"class="radio">
+                                    <label for="famale">25</label>
+                                    <br>
+                                    <input type="radio" name="gender" id="24"class="radio">
+                                    <label for="male">24</label>
+                        
+                                    <button onclick="skitxva5()">მეხუთე კითხვის შემოწმება</button>  
+                                   
+                                    <p>6.კვადრატის ფართობია 25 რას უდრის მისი 1 გვერდი?</p>
+
+                            <input type="radio" name="gender" id="15" class="radio">
+                                    <label for="famale">15</label>
+                                    <br>
+                                    <input type="radio" name="gender" id="5"class="radio">
+                                    <label for="male">5</label>
+                        
+                                    <button onclick="skitxva6()">მეექვსე კითხვის შემოწმება</button>  
+
+                                    <p>7.რომელი რომაული რიცხვია მეტი MCXXI  MLXXXIX</p>
+
+                                    <input type="radio" name="gender" id="MLXXXIX" class="radio">
+                                            <label for="famale">MLXXXIX</label>
+                                            <br>
+                                            <input type="radio" name="gender" id="MCXXI"class="radio">
+                                            <label for="male"> MCXXI</label>
+                                          
+                                            <button onclick="skitxva7()">მეშვიდე კითხვის შემოწმება</button>  
+                                  
+                                            <h3>ლოგიკური ამოცანა</h3>
+                                        <p>8.მდინარე ყვავილებით 60 დღეში მთლიანად ივსება, ყვავილები ყოველ დღე ორმაგდება,
+                                            მაგალითად თუ არის 2 ხდება 4, თუ არის 15 ხდება 30. რამდენ დღეში შეივსება მდინარის ნახევარი?</p>
+
+                                            <input type="radio" name="gender" id="30" class="radio">
+                                                    <label for="famale">30</label>
+                                                    <br>
+                                                    <input type="radio" name="gender" id="59"class="radio">
+                                                    <label for="male">59</label>
+                                        
+                                                    <button onclick="skitxva8()">მერვე კითხვის შემოწმება</button>  
+                                    
+        
+    
+</body>
+<script>
+    function skitxva1() {
+        var pasuxi1= document.getElementById("143");
+        var pasuxi2= document.getElementById("147");
+        
+
+       if(pasuxi1.checked) {
+           alert('პასუხი სწორია')
+       }
+       else{
+            alert("პასუხი არასწორია")
+       }
+}
+
+function skitxva2(){
+    var pasuxi1 = document.getElementById('22');
+    var pasuxi2 = document.getElementById('20');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი არასწორია')
+       }
+       else{
+            alert("პასუხი სწორია")
+       }
+    
+}
+
+function skitxva3() {
+    var pasuxi1 = document.getElementById('ki');
+    var pasuxi2 = document.getElementById('ara');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი სწორია')
+       }
+       else{
+            alert("პასუხი არასწორია")
+       }
+    
+}
+
+function skitxva4() {
+    var pasuxi1 = document.getElementById('625');
+    var pasuxi2 = document.getElementById('630');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი სწორია')
+       }
+       else{
+            alert("პასუხი არასწორია")
+       }
+}
+function skitxva5(){
+    var pasuxi1 = document.getElementById('25');
+    var pasuxi2 = document.getElementById('24');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი არასწორია')
+       }
+       else{
+            alert("პასუხი სწორია")
+       }
+    
+}
+function skitxva6(){
+    var pasuxi1 = document.getElementById('15');
+    var pasuxi2 = document.getElementById('5');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი არასწორია')
+       }
+       else{
+            alert("პასუხი სწორია")
+       }
+    
+}
+
+function skitxva7(){
+    var pasuxi1 = document.getElementById('MLXXXIX');
+    var pasuxi2 = document.getElementById('MCXXI');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი არასწორია')
+       }
+       else{
+            alert("პასუხი სწორია")
+       }
+    
+}
+function skitxva8(){
+    var pasuxi1 = document.getElementById('30');
+    var pasuxi2 = document.getElementById('59');
+
+    if(pasuxi1.checked) {
+           alert('პასუხი არასწორია')
+       }
+       else{
+            alert("პასუხი სწორია")
+       }
+    
+}
+
+function daawiret() {
+    alert("თუ თქვენ გსურთ შეამოწმოთ თქვენი ცოდნა მაშინ შეავსეთ მცირე (დაწყებითი) ქუიზი")
+}
+
+
+
+</script>
+</html>

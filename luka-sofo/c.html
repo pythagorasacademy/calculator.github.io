@@ -1,0 +1,304 @@
+<html>
+<head>
+	<title>Sunrise</title>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="a.css">
+	 <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="physics">
+		
+  
+
+<!-- Use any element to open the sidenav -->
+<button> <a href="a.html" title="">მთავარი</a> </button>
+
+
+		 	
+              <script src="main.js"></script>
+  <!-- Formula -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+     
+           <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        მათემატიკა
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        	<a class="dropdown-item" href="b.html">სრულად</a>
+        	 <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="b.html#algebra">ალგებრა</a>
+          <a class="dropdown-item" href="b.html#geometria">გეომეტრია</a>
+           <a class="dropdown-item" href="mathinfo.html">თეორია</a>  
+          <div class="dropdown-divider"></div>
+           
+
+          <a class="dropdown-item" href="mathtest.html">ტესტი</a>
+        </div>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="physics.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ფიზიკა
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="c.html">საწყისები</a>
+          <a class="dropdown-item" href="fizikisinfo.html">თეორია</a>  
+         <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="fizikistesti.html">ტესტი</a>
+            <a class="dropdown-item" href="si.html">გადამყვანი</a>
+        </div>
+      </li>
+           <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ქიმია
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="chemistry.html">ორგანული</a>
+          <a class="dropdown-item" href="chemistry.html">არაორგანული</a>
+         
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="chemistry.html">სრულად</a>
+        </div>
+      </li>
+ 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ბიოლოგია
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="biologia.html">სრულად</a>
+        </div>
+      </li>
+
+    </ul>
+
+   <form class="form-inline my-2 my-lg-0">
+      <input  class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search">
+      <button onclick="searchbar()" id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  <div class="container-fluid">
+
+   
+      
+   <h1 id="algebra"> ფიზიკა </h1>
+   
+   <br>
+   <h5> დარწმუნდით რომ შეტანილი ერთეულები მიეკუთვნებიან SI სისტემას(კგ, მ, წმ)</h5>
+   <h5>თუ გსურთ SI სისტემის ერთეულებში გადაყვანა,<a href="si.html">დააჭირეთ აქ</a></h5>
+<br>
+    <br>
+    <br>
+    <br>
+   <div class="template">
+        <div class="formulissaxeli">
+          <b> სიმკვრივე </b>
+        </div>
+        <div class="formula">
+          <p> P=m/v </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="m"  placeholder="შეიყვანეთ მასა">
+              <input type="number" id="v"  placeholder="შეიყვანეთ მოცულობა">
+      <button onclick="simkvrive()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="simkvrivisveli"> </p>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="formulissaxeli">
+          <b> სიჩქარე </b>
+        </div>
+        <div class="formula">
+          <p> V=S/t </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="s"  placeholder="შეიყვანეთ მანძილი">
+              <input type="number" id="t"  placeholder="შეიყვანეთ სიჩქარე">
+      <button onclick="sichqare()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="sichqarisveli"> </p>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="formulissaxeli">
+          <b> დრეკადობის ძალა </b>
+        </div>
+        <div class="formula">
+          <p>  </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="k"  placeholder="შეიყვანეთ სიხისტე">
+              <input type="number" id="L"  placeholder="შეიყვანეთ გადაადგილება">
+      <button onclick="drZala()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="dzalisveli"> </p>
+        </div>
+    </div>
+
+     <div class="template">
+        <div class="formulissaxeli">
+          <b> წნევის ძალა </b>
+        </div>
+        <div class="formula">
+          <p>  </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="f"  placeholder="შეიყვანეთ ძალა">
+              <input type="number" id="s1"  placeholder="შეიყვანეთ ფართობი">
+      <button onclick="wneva()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="wnevisveli"> </p>
+        </div>
+    </div>
+  </header>
+  <div class="geometria1">
+    <br>
+    <br>
+    <br>
+    <br>
+
+ <div class="template">
+        <div class="formulissaxeli">
+          <b> მექანიკური მუშაობა</b>
+        </div>
+        <div class="formula">
+          <p> A=F*S </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="zala"  placeholder="შეიყვანეთ ძალა">
+              <input type="number" id="manzili"  placeholder="შეიყვანეთ განვლილი მანძილი">
+      <button onclick="mushaoba()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="mushaobisveli"> </p>
+        </div>
+    </div>
+
+<div class="template">
+        <div class="formulissaxeli">
+          <b> სიმძლავრე </b>
+        </div>
+        <div class="formula">
+          <p> A/t </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="mushaoba"  placeholder="შეიყვანეთ მუშაობა">
+              <input type="number" id="dro"  placeholder="შეიყვანეთ დრო">
+      <button onclick="simzlavre()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="simdzlavrisveli"> </p>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="formulissaxeli">
+          <b> სიმძიმის ძალა </b>
+        </div>
+        <div class="formula">
+          <p> F=mg </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="masa"  placeholder="შეიყვანეთ მასა">
+            
+      <button onclick="simZala()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="simdzalisveli"> </p>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="formulissaxeli">
+          <b> პოტენციური ენერგია </b>
+        </div>
+        <div class="formula">
+          <p> F=m*g*h </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="masa3"  placeholder="შეიყვანეთ მასა">
+              <input type="number" id="simagle"  placeholder="შეიყვანეთ სიმაღლე">
+      <button onclick="GrPotEnergia()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="potdzalisveli"> </p>
+        </div>
+    </div>
+     <div class="template">
+        <div class="formulissaxeli">
+          <b> კინეტიკური ენერგია </b>
+        </div>
+        <div class="formula">
+          <p> A = (mv^2)/2 </p>
+        </div>
+        <div class="gamotvla">
+
+           <input type="number"  id="m"  placeholder="შეიყვანეთ მასა">
+              <input type="number" id="v"  placeholder="შეიყვანეთ მოცულობა">
+      <button onclick="simkvrive()" id="gilaki"> <b class="b"> გამოთვლა </b> </button>
+
+         
+          
+        </div>
+        <div class="shedegi">
+           <p id="simkvrivisveli"> </p>
+        </div>
+    </div>
+
+</div>
+  
+
+
+</div>
+
+		   	  
+	
+
+</body>
+</html>

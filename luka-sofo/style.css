@@ -1,0 +1,436 @@
+ul.navbar-nav.mr-auto {
+    padding-left: 50px;
+
+}
+a.nav-link {font-size: 28px;}
+a.nav-link {
+    margin-left: 100px;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+span{
+  font-style: red;
+  font-size: 37px;
+}
+.bg-light {
+    background-color: #fff30c!important;
+}
+button {
+    font-size: 35px;
+    background-color: transparent;
+    color: black;
+    /* background-color: lightsalmon; */
+    border-width: 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.box{
+  position:absolute;
+  width: 250px;
+  height: 1000px;
+ background-color: #fff30c!important;
+ 
+
+}
+.boxa{
+
+width: 250px;
+  height: 1000px;
+ background-color: #fff30c!important;
+ margin-left: auto;
+}
+
+
+.bg-light {
+
+  background-image: linear-gradient(to right, skyblue, lightblue, blue, lightblue, skyblue);
+}
+
+.bg-info {
+   background-image: linear-gradient(to bottom, skyblue, lightblue, blue, darkblue);
+}
+div#second {
+    background-image: linear-gradient(to top, skyblue, lightblue, blue, darkblue);
+}
+
+
+
+
+
+
+
+.container {
+    width: auto;
+    background: #1f2326;
+    border-radius: 5px;
+    box-shadow: 0 15px 50px 0 rgba(0,0,0,0.4), 0 15px 20px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading {
+    text-align: left;
+    font-size: 22px;
+    color: #000000;
+    padding: 10px 0 0 10px;
+}
+.resultscreen {
+    height: 110px;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #fafafa;
+}
+input[type='text'] {
+    width: 300px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    text-align: right;
+    font-size: 40px;
+    color: #000000;
+    background: none;
+}
+.line {
+    width: 300px;
+}
+input[type='button'] {
+    float: left;
+    font-size: 24px;
+    line-height: 70px;
+    margin: 1;
+    width: 73px;
+    height: 70px;
+    border: none;
+    color: #fafafa;
+    cursor: pointer;
+    outline: none;
+    background: #2d2d2d;
+}
+input[type='button'][value='0'] {
+    border-bottom-left-radius: 5px;
+}
+input[type='button'][value='='] {
+    background: #ec2629;
+    color: #ffffff;
+    border-bottom-right-radius: 5px;
+
+}
+p{
+ color: black;
+ text-align: center;
+}
+body{
+ 
+  text-align: center;
+}
+.formula{
+  color: black;
+  widows: 400px;
+  height: 150px;
+  border-width: 3px;
+  border-color: black;
+}
+.bg-info {
+    height:100vh;
+    background-color: #ff4200!important;
+}
+.bg-success {
+    background-color: white!important;
+  }
+.template {
+margin-top: 80px;
+  
+  background-color: lightblue;  
+
+    width: 1100px;
+    height: 150px;
+    margin-left: 220px;
+}
+
+b
+{
+  font-size: 20px;
+  float: left;
+  padding-left: 10px;
+}
+
+
+.navbar-expand-lg .navbar-nav .dropdown-menu
+ {
+    background-image: linear-gradient(45deg, black, transparent);
+    left: 120px;
+    position: absolute;
+   background-image: linear-gradient(to bottom, skyblue, lightblue, skyblue );
+    top: 63px;
+}
+
+
+.template
+{
+  height: 280px;
+  width: 250px;
+}
+.formulissaxeli {
+    height: 60px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+.formula {
+  font-size: 25px;
+  text-align: center;
+    height: 55px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+.gamotvla {
+    height: 110px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    }
+
+.shedegi 
+    {
+      width: 100px;
+    height: 52px;
+   
+}
+button#gilaki {
+    background-color: lightblue;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.template
+{
+      right: 110px;
+    position: relative;
+  display: inline-grid;
+}
+input
+ {
+    margin-right: 102px;
+    height: 20px;
+    width: 150px;
+    font-size: 13px;
+    margin-top: 0px;
+}
+.template:hover{
+  
+}
+.photo {
+    height: 350px;
+    border-bottom-style: solid;
+}
+.person {
+    display: inline-grid;
+    border-style: solid;
+    width: 300px;
+    height: 450px;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.instant-search {
+  position: relative;
+  max-width: 250px;
+}
+
+.instant-search,
+.instant-search__input {
+  font-family: sans-serif;
+}
+
+.instant-search,
+.instant-search * {
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.instant-search:focus-within {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.instant-search--loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #009578;
+  border-radius: 5px;
+  animation: searchIndicator 0.5s infinite ease-in-out;
+}
+
+@keyframes searchIndicator {
+  0% {
+    width: 15%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+.instant-search,
+.instant-search__input-container {
+  border-radius: 5px;
+}
+
+.instant-search__input-container {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  background: #eeeeee;
+}
+
+.instant-search__input-container:focus-within {
+  background: #ffffff;
+}
+
+.instant-search__input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 6px;
+  background: transparent;
+}
+
+.instant-search__results-container {
+  max-height: 250px;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s, opacity 0.1s;
+}
+
+.instant-search__results-container--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.instant-search__result {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.instant-search__result:hover {
+  background: #eeeeee;
+}
+
+.instant-search__result:not(:last-of-type) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.instant-search__title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.instant-search__paragraph {
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+
+ 
+    .gtemplate{
+      position: relative;
+      right:105px;
+      margin-top: 80px;
+    display: inline-grid;
+  background-color: lightblue;  
+    margin-left: 220px;
+      height: 280px;
+      width: 320px;
+    }
+    .ggamotvla{
+      
+    height: 120px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    
+    }
+.testi {
+    margin-top: 60px;
+    height: 600px;
+    width: 1400px;
+  margin-left: 77px;
+    background-color: lightskyblue;
+}
+.amocana{
+  height: 150px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
+.amocanissaxeli{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+.piroba{
+  font-size: 32px;
+   border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}

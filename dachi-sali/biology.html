@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>biology page</title>
         <link rel="stylesheet" href="biology.css">
- </head>
+    </head>
     <body>
         <header class="header">
             <div class="header-wrapper">
@@ -18,30 +18,23 @@
                             <div class="navbar">
                                 <a href="#" onclick="window.open('pageninomaswi.html')">მთავარი</a>
                                 <div class="dropdown">
-                                <button class="dropbtn" onclick="myFunction()">გენეტიკა<i class="fa fa-caret-down"></i></button>
-                                <div class="dropdown-content" id="myDropdown">
-                                    <a href="#sqesi">სქესის არჩევა</a>
-                                    <a href="#tmisamocnoba">ბავშვის თმის ფერის გამოცნობა</a>
-                                    <a href="#formisgamocnoba">ბავშვის თმის ფორმის განსაზღვრა</a>
-                                    <a href="#tvalisferisgamocnoba">ბავშვის თვალის ფერის განსაზღვრა</a>
-                                    <a href="#simaglisgamocnoba">ბავშვის სიმაღლის განსაზღვრა</a>
+                                    <button class="dropbtn" onclick="myFunction()">გენეტიკა<i class="fa fa-caret-down"></i></button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                        <a href="#sqesi">სქესის არჩევა</a>
+                                        <a href="#tmisamocnoba">ბავშვის თმის ფერის გამოცნობა</a>
+                                        <a href="#formisgamocnoba">ბავშვის თმის ფორმის განსაზღვრა</a>
+                                        <a href="#tvalisferisgamocnoba">ბავშვის თვალის ფერის განსაზღვრა</a>
+                                        <a href="#simaglisgamocnoba">ბავშვის სიმაღლის განსაზღვრა</a>
 
-                                </div>
+                                    </div>
                                 </div> 
-                              </div>
-
-
-
-                              
-                                  
-                                </div>
-                              </div>
+                            </div>  
                         </ul>
-                    </nav>
-                </div>
-            
-            </header>
-            <main class="main">
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+        <main class="main">
             <div class="main-subjects--headerstyle=" style="background-color:#FAE5D3">
                 <h1 class="main-subjects--header--h1" id="formulebi">ბიოლოგია</h1>
                 <h2 class="main-subjects--header--text" id="sqesi">სქესის გამოცნობა</h2>
@@ -62,25 +55,24 @@
                     <button onclick="sqesisGamocnoba()">სქესის გამოცნობა</button>
                     <br>
                     <br>
-
                     <h2 class="main-subjects--header--text" id="tmisamocnoba">მომავალი ბავშვის თმის ფერის გამოცნობა</h2>
                     <label style="color: brown; text-align: center;">დედის მშობლები</label>
                     <label for='styledSelect1' class='custom-select'>
-                    <select name="momParents" id="momParents" >
-                    <option value="ghiaghia">ორივე მშობელი ღია ფერის თმით</option>
-                    <option value="muqimuqi">ორივე მშობელი მუქი ფერის თმით</option>
-                    <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თმით</option>
-                    </select>
+                        <select name="momParents" id="momParents" >
+                            <option value="ghiaghia">ორივე მშობელი ღია ფერის თმით</option>
+                            <option value="muqimuqi">ორივე მშობელი მუქი ფერის თმით</option>
+                            <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თმით</option>
+                        </select>
                     </label>
                     <br>
                     <label style="color: brown; text-align: center;">მამის მშობლები</label>
                     <label for='styledSelect1' class='custom-select'>
-                   <select name="dadParents" id="dadParents">
-                   <option value="ghiaghia">ორივე მშობელი ღია ფერის თმით</option>
-                   <option value="muqimuqi">ორივე მშობელი მუქი ფერის თმით</option>
-                   <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თმით</option>
-                   </select>
-                </label>
+                        <select name="dadParents" id="dadParents">
+                                <option value="ghiaghia">ორივე მშობელი ღია ფერის თმით</option>
+                                <option value="muqimuqi">ორივე მშობელი მუქი ფერის თმით</option>
+                                <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თმით</option>
+                        </select>
+                    </label>
                    <br>
                    <button onclick="bavshvisTmisFeri()">მომავალი ბავშვის თმის ფერის განსაზღვრა</button>
 
@@ -102,106 +94,95 @@
                        <option value="xuchuchaswori">ერთი მშობელი ხუჭუჭა და მეორე სწორი ფორმს თმით</option>
                    </select>
                    </label>
-
                    <br>
                    <br>
                    <button onclick="bavshvisTmisForma()">მომავალი ბავშვის თმის ფორმის განსაზღვრა</button>
-
                    <h2 class="main-subjects--header--text" id="tvalisferisgamocnoba">ბავშვის თვალის ფერის გამოცნობა</h2>
                    <label style="color: brown; text-align: center;">დედის მშობლები</label>
                    <label for='styledSelect1' class='custom-select'>
-                   <select name="momParents" id="momParents2">
-                       <option value="ghiaghia">ორივე მშობელი ღია ფერის თვალით</option>
-                       <option value="muqimuqi">ორივე მშობელი მუქი ფერის თვალით</option>
-                       <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თვალით</option>
-                   </select>
-                </label>
+                        <select name="momParents" id="momParents2">
+                            <option value="ghiaghia">ორივე მშობელი ღია ფერის თვალით</option>
+                            <option value="muqimuqi">ორივე მშობელი მუქი ფერის თვალით</option>
+                            <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თვალით</option>
+                        </select>
+                    </label>
                    <br>
                    <label style="color: brown; text-align: center;">მამის მშობლები</label>
                    <label for='styledSelect1' class='custom-select'>
-                   <select name="dadParents" id="dadParents2">
-                       <option value="ghiaghia">ორივე მშობელი ღია ფერის თვალით</option>
-                       <option value="muqimuqi">ორივე მშობელი მუქი ფერის თვალით</option>
-                       <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თვალით</option>
-                   </select>
-                </label>
+                        <select name="dadParents" id="dadParents2">
+                            <option value="ghiaghia">ორივე მშობელი ღია ფერის თვალით</option>
+                            <option value="muqimuqi">ორივე მშობელი მუქი ფერის თვალით</option>
+                            <option value="ghiamuqi">ერთი მშობელი ღია და მეორე მუქი ფერის თვალით</option>
+                        </select>
+                   </label>
                    <br>
                    <br>
                    <button onclick="bavshvisTvalisFeri()">მომავალი ბავშვის თვალის ფერის განსაზღვრა</button>
-               
                    <h2 class="main-subjects--header--text" id="simaglisgamocnoba" >მომავალი ბავშვის სიმაღლის გამოცნობა</h2>
                    <label style="color: brown; text-align: center;">დედის მშობლები</label>
                    <label for='styledSelect1' class='custom-select'>
                       <select name="momParents" id="momParents3">
-                      <option value="dabalidabali">ორივე მშობელი არის დაბალი</option>
-                      <option value="magalimagali">ორივე მშობელი არის მაღალი</option>
-                      <option value="dabalimagali">ერთი მშობელი არის მაღალი და მეორე არის დაბალი</option>
+                        <option value="dabalidabali">ორივე მშობელი არის დაბალი</option>
+                        <option value="magalimagali">ორივე მშობელი არის მაღალი</option>
+                        <option value="dabalimagali">ერთი მშობელი არის მაღალი და მეორე არის დაბალი</option>
                       </select>
                    </label>
-                       <br>
-                       <label style="color: brown; text-align: center;">მამის მშობლები</label>
-                 <label for='styledSelect1' class='custom-select'>
-                     <select name="dadParents" id="dadParents3">
-                     <option value="dabalidabali">ორივე მშობელი არის დაბალი</option>
-                     <option value="magalimagali">ორივე მშობელი არის მაღალი</option>
-                     <option value="dabalimagali">ერთი მშობელი არის მაღალი და მეორე არის დაბალი</option>
-                       </select>
-                 </label>
-                      <br>
-                      <br>
-                     <button onclick="bavshvissimagle()">მომავალი ბავშვის სიმაღლის განსაზღვრა</button>
-
-               
-                   </div>
+                    <br>
+                    <label style="color: brown; text-align: center;">მამის მშობლები</label>
+                    <label for='styledSelect1' class='custom-select'>
+                        <select name="dadParents" id="dadParents3">
+                            <option value="dabalidabali">ორივე მშობელი არის დაბალი</option>
+                            <option value="magalimagali">ორივე მშობელი არის მაღალი</option>
+                            <option value="dabalimagali">ერთი მშობელი არის მაღალი და მეორე არის დაბალი</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <button onclick="bavshvissimagle()">მომავალი ბავშვის სიმაღლის განსაზღვრა</button> 
                 </div>
-            
-        </div>
             </div>
-            </main>
-        </header>
-                <footer class="footer-distributed">
-                    <div class="footer-left">
-                        <h3>Pythagoras<span>Academy</span></h3>
-                        <p class="footer-links">
-                        <a href="#">მთავარი</a>
-                        <a href="#">ჩვენს შესახებ</a>
-                        <a href="#">კონტაქტი</a>
-                        </p>
-                        <span style="color: #BB8FCE;">&copy Pythagoras | Tbilisi, <script>document.write(new Date().getFullYear())</script> ყველა უფლება დაცულია</span>
-                        </div>
-                        <div class="footer-center">
-                        <div>
-                        <i class="fa fa-map-marker"></i>
-                        <p style="color:#28B463;"><span>7 Sandro Euli Street</span> Tbilisi, Georgia</p>
-                        </div>
-                        <div>
-                        <i class="fa fa-phone"></i>
-                        <p style="color: blueviolet;">+995 555 87 87</p>
-                        </div>
-                        <div>
-                        <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:support@company.com">pythagorasacademy.ge@gmail.com</a></p>
-                        </div>
-                        </div>
-                        <div class="footer-right">
-                        <p class="footer-company-about">
-                        <span>აკადემიის შესახებ</span>
-                        ცენტრში სწავლება ეფუძნება სწავლების მრავაფეროვან,მრავალმხრივ და არასტანდარტულ მეთოდებს მოსწავლეების ასაკის შესაბამისად.
-                    </p>
-                    <div class="footer-icons">
-                        <a href="https://www.facebook.com/pitagora.ge"><i class="fafa-facebook"><img src="facebook logo.png" style="height: 20px 20px;
-                            width: 28px;" /></i></a>
-                        <a href="#"><i class="fafa-twitter"><img src="Twitter logo.png" style="height: 20px 20px;
-                            width: 36px; " /></i></a>
-                        <a href="#"><i class="fafa-instagram"><img src="instagram logo.png" style="height: 20px 20px;
-                            width: 35px;" /></i></a>
-                        </div>
-                  </div>
-
-                </footer>
-
-                </body>
-                <script>
+        </main>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>Pythagoras<span>Academy</span></h3>
+                <p class="footer-links">
+                    <a href="#">მთავარი</a>
+                    <a href="#">ჩვენს შესახებ</a>
+                    <a href="#">კონტაქტი</a>
+                </p>
+                <span style="color: #BB8FCE;">&copy Pythagoras | Tbilisi, <script>document.write(new Date().getFullYear())</script> ყველა უფლება დაცულია</span>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p style="color:#28B463;"><span>7 Sandro Euli Street</span> Tbilisi, Georgia</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p style="color: blueviolet;">+995 555 87 87</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">pythagorasacademy.ge@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>აკადემიის შესახებ</span>
+                    ცენტრში სწავლება ეფუძნება სწავლების მრავაფეროვან,მრავალმხრივ და არასტანდარტულ მეთოდებს მოსწავლეების ასაკის შესაბამისად.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/pitagora.ge"><i class="fafa-facebook"><img src="facebook logo.png" style="height: 20px 20px;
+                        width: 28px;" /></i></a>
+                    <a href="#"><i class="fafa-twitter"><img src="Twitter logo.png" style="height: 20px 20px;
+                        width: 36px; " /></i></a>
+                    <a href="#"><i class="fafa-instagram"><img src="instagram logo.png" style="height: 20px 20px;
+                        width: 35px;" /></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script>
  function sqesisGamocnoba(){
     var womanBirthYear = parseInt(document.getElementById('womanBirthYear').value);
     var womanBirthMonth = parseInt(document.getElementById('womanBirthMonth').value);

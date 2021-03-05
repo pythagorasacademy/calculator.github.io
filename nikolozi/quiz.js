@@ -8,7 +8,7 @@ function check() {
     var q6=document.quiz.question6.value;
     var q7=document.quiz.question7.value;
     var q8=document.quiz.question8.value;
-    var result=document.getElementById('result')
+    var result=document.getElementById('result');
     var quiz=document.getElementById("quiz");
     if (q1=="143") {c++}
     if (q2=="20") {c++} 
@@ -18,11 +18,11 @@ function check() {
     if (q6=="25") {c++}
     if (q7=="MCXXI") {c++}
     if (q8=="59") {c++}
-   quiz.style.display="none"
+    quiz.style.display="none";
    
-   if (c<=4) {
-    result.textContent=`თქვენი შედეგია ${c}. არც ისე კარგია, გთხოვთ შეეცადოთ იმუშაოთ საკუთარ თავზე.`
-   } else {
-    result.textContent=`შენი შედეგია ${c}. გასაოცარია. შევინარჩუნოთ ის!.`
-   }
+    if (c<=4) {
+        result.textContent=`თქვენი შედეგია ${c}. არც ისე კარგია, გთხოვთ შეეცადოთ იმუშაოთ საკუთარ თავზე.`
+    } else {
+        result.textContent=`შენი შედეგია ${c}. გასაოცარია. შევინარჩუნოთ ის!.`
+    }
 }
